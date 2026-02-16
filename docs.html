@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
+<html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Wallify IG Documentation</title>
@@ -14,228 +14,264 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#FF2D7A",
-                        "background-light": "#ffffff",
-                        "background-dark": "#121121",
-                        "sidebar-light": "#f9fafb",
-                    },
-                    backgroundImage: {
-                        "brand-gradient": "linear-gradient(135deg, #FF6A3D, #FF2D7A, #A855F7, #4F46E5)",
+                        "primary": "#ff5a3d",
+                        "background-light": "#f8f6f5",
+                        "background-dark": "#23120f",
                     },
                     fontFamily: {
-                        "display": ["Inter", "sans-serif"],
-                        "mono": ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"]
+                        "display": ["Inter", "sans-serif"]
                     },
-                    borderRadius: {
-                        "DEFAULT": "0.75rem",
-                        "lg": "1rem",
-                        "xl": "1.5rem",
-                        "full": "9999px"
-                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
                 },
             },
         }
     </script>
 <style>
         body { font-family: 'Inter', sans-serif; }
-        .sidebar-scroll::-webkit-scrollbar { width: 4px; }
-        .sidebar-scroll::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 10px; }
+        .sidebar-active { background-color: rgba(255, 90, 61, 0.1); color: #ff5a3d; font-weight: 600; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
-<!-- Sticky Header -->
-<header class="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-background-dark/80">
+<body class="bg-white text-slate-900 antialiased font-display">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md">
 <div class="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-6 lg:px-10">
 <div class="flex items-center gap-8">
-<a class="flex items-center gap-2.5" href="#">
-<div class="flex h-9 w-9 items-center justify-center rounded-lg text-white bg-brand-gradient">
-<span class="material-symbols-outlined text-2xl">grid_view</span>
+<a class="flex items-center gap-2 group" href="#">
+<div class="bg-primary p-1.5 rounded-lg text-white group-hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined block">grid_view</span>
 </div>
-<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Wallify<span class="text-primary" style="color: #FF2D7A;">IG</span></span>
+<span class="text-xl font-bold tracking-tight text-slate-900">Wallify IG</span>
 </a>
-<!-- Desktop Search -->
-<div class="hidden md:block">
-<label class="relative group">
-<span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400 group-focus-within:text-primary transition-colors">
+<div class="hidden md:flex relative w-80 group">
+<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-400 group-focus-within:text-primary transition-colors">
 <span class="material-symbols-outlined text-xl">search</span>
-</span>
-<input class="h-10 w-80 rounded-full border-slate-200 bg-slate-50 pl-10 pr-12 text-sm focus:border-primary focus:ring-1 focus:ring-primary dark:border-slate-700 dark:bg-slate-900/50" placeholder="Search documentation..." type="text"/>
-<span class="absolute inset-y-0 right-3 flex items-center">
-<kbd class="rounded border border-slate-300 bg-white px-1.5 py-0.5 text-[10px] font-medium text-slate-500 dark:border-slate-600 dark:bg-slate-800">⌘K</kbd>
-</span>
-</label>
+</div>
+<input class="block w-full rounded-lg border-slate-200 bg-slate-50 py-2 pl-10 pr-3 text-sm placeholder:text-slate-400 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="Search documentation..." type="text"/>
+<div class="absolute inset-y-0 right-3 flex items-center pointer-events-none">
+<kbd class="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-semibold text-slate-500 bg-white border border-slate-200 rounded">⌘K</kbd>
 </div>
 </div>
-<div class="flex items-center gap-6">
-<nav class="hidden items-center gap-6 lg:flex">
-<a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400" href="#">Guides</a>
-<a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400" href="#">Components</a>
-<a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400" href="#">GitHub</a>
+</div>
+<div class="flex items-center gap-4">
+<nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-slate-600">
+<a class="hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="hover:text-primary transition-colors" href="features.html">Features</a>
+<a class="hover:text-primary transition-colors" href="pricing.html">Pricing</a>
+<a class="hover:text-primary transition-colors" href="blog.html">Blog</a>
+<a class="text-primary" href="docs.html">Docs</a>
+<a class="hover:text-primary transition-colors" href="support.html">Support</a>
 </nav>
-<div class="h-6 w-px bg-slate-200 dark:bg-slate-800"></div>
-<button class="flex h-10 items-center justify-center rounded-full px-5 text-sm font-semibold text-white transition-all hover:bg-primary/90 bg-brand-gradient">
-                    Sign Up
+<div class="h-6 w-[1px] bg-slate-200 hidden sm:block"></div>
+<button class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all shadow-sm shadow-primary/20">
+                    Sign In
                 </button>
 </div>
 </div>
 </header>
 <div class="mx-auto flex max-w-[1440px] px-6 lg:px-10">
 <!-- Sidebar Navigation -->
-<aside class="fixed bottom-0 top-16 hidden w-64 overflow-y-auto border-r border-slate-200 bg-sidebar-light py-8 pr-6 sidebar-scroll lg:block dark:border-slate-800 dark:bg-background-dark">
+<aside class="fixed top-16 bottom-0 left-0 z-40 hidden w-72 overflow-y-auto border-r border-slate-200 px-6 py-8 lg:sticky lg:block">
 <nav class="space-y-8">
 <div>
-<h5 class="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-900 dark:text-slate-100">Getting Started</h5>
-<ul class="space-y-2 border-l border-slate-200 dark:border-slate-800">
-<li><a class="block border-l -ml-px border-primary pl-4 text-sm font-semibold text-primary" href="#" style="color: #FF2D7A;">Introduction</a></li>
-<li><a class="block border-l -ml-px border-transparent pl-4 text-sm font-medium text-slate-600 hover:border-slate-400 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100" href="#">Prerequisites</a></li>
-<li><a class="block border-l -ml-px border-transparent pl-4 text-sm font-medium text-slate-600 hover:border-slate-400 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100" href="#">Release Notes</a></li>
+<h5 class="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-400">Introduction</h5>
+<ul class="space-y-2">
+<li>
+<a class="sidebar-active flex items-center gap-3 rounded-lg px-3 py-2 text-sm" href="#">
+<span class="material-symbols-outlined text-lg">rocket_launch</span>
+                                Getting Started
+                            </a>
+</li>
+<li>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">download</span>
+                                Install Guide
+                            </a>
+</li>
 </ul>
 </div>
 <div>
-<h5 class="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-900 dark:text-slate-100">Installation</h5>
-<ul class="space-y-2 border-l border-slate-200 dark:border-slate-800">
-<li><a class="block border-l -ml-px border-transparent pl-4 text-sm font-medium text-slate-600 hover:border-slate-400 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100" href="#">Quick Start</a></li>
-<li><a class="block border-l -ml-px border-transparent pl-4 text-sm font-medium text-slate-600 hover:border-slate-400 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100" href="#">Using NPM</a></li>
-<li><a class="block border-l -ml-px border-transparent pl-4 text-sm font-medium text-slate-600 hover:border-slate-400 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100" href="#">Configuration</a></li>
+<h5 class="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-400">Configuration</h5>
+<ul class="space-y-2">
+<li>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">photo_camera</span>
+                                Connect Instagram
+                            </a>
+</li>
+<li>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">shopping_bag</span>
+                                Embedding in Shopify
+                            </a>
+</li>
+<li>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">palette</span>
+                                Customization
+                            </a>
+</li>
 </ul>
 </div>
 <div>
-<h5 class="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-900 dark:text-slate-100">API Reference</h5>
-<ul class="space-y-2 border-l border-slate-200 dark:border-slate-800">
-<li><a class="block border-l -ml-px border-transparent pl-4 text-sm font-medium text-slate-600 hover:border-slate-400 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100" href="#">Core Concepts</a></li>
-<li><a class="block border-l -ml-px border-transparent pl-4 text-sm font-medium text-slate-600 hover:border-slate-400 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100" href="#">Classes &amp; Methods</a></li>
-<li><a class="block border-l -ml-px border-transparent pl-4 text-sm font-medium text-slate-600 hover:border-slate-400 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100" href="#">Utility Hooks</a></li>
-<li><a class="block border-l -ml-px border-transparent pl-4 text-sm font-medium text-slate-600 hover:border-slate-400 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100" href="#">Error Handling</a></li>
+<h5 class="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-400">Technical</h5>
+<ul class="space-y-2">
+<li>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">speed</span>
+                                Performance
+                            </a>
+</li>
+<li>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">help</span>
+                                Troubleshooting
+                            </a>
+</li>
+<li>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">code</span>
+                                API Reference
+                            </a>
+</li>
+<li>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">security</span>
+                                GDPR Compliance
+                            </a>
+</li>
 </ul>
 </div>
 </nav>
 </aside>
-<!-- Main Content -->
-<main class="flex-1 py-12 lg:pl-72 lg:pr-64">
-<div class="mx-auto max-w-3xl">
+<!-- Main Content Area -->
+<main class="flex-1 min-w-0 py-10 lg:pl-10">
+<div class="max-w-4xl">
 <!-- Breadcrumbs -->
-<nav class="mb-4 flex items-center gap-2 text-sm text-slate-500">
-<a class="hover:text-primary" href="#">Docs</a>
-<span class="material-symbols-outlined text-sm">chevron_right</span>
-<span class="text-slate-900 font-medium dark:text-white">Getting Started</span>
+<nav aria-label="Breadcrumb" class="flex text-sm font-medium text-slate-500 mb-8">
+<ol class="flex items-center space-x-2">
+<li><a class="hover:text-slate-900" href="#">Documentation</a></li>
+<li><span class="material-symbols-outlined text-sm">chevron_right</span></li>
+<li class="text-primary">Getting Started</li>
+</ol>
 </nav>
-<h1 class="mb-4 text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white lg:text-5xl">Getting Started</h1>
-<p class="mb-8 text-lg text-slate-600 dark:text-slate-400">
-                    Learn how to integrate Wallify IG into your project. Wallify IG is a high-performance, developer-centric library designed to create immersive grid layouts for modern web applications.
+<h1 class="text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Getting Started with Wallify IG</h1>
+<p class="text-xl text-slate-600 mb-8 leading-relaxed">
+                    Learn how to seamlessly integrate your Instagram feed into your Shopify storefront and start driving social proof today.
                 </p>
+<!-- Information Callout -->
+<div class="flex gap-4 p-5 rounded-xl bg-blue-50 border border-blue-100 text-blue-900 mb-10">
+<span class="material-symbols-outlined text-blue-500">info</span>
+<div>
+<p class="font-semibold text-sm">Quick Setup</p>
+<p class="text-sm opacity-90 leading-relaxed">Most merchants have their first gallery live in under 5 minutes using our automated embedding tool.</p>
+</div>
+</div>
 <div class="space-y-12">
-<!-- Section: Introduction -->
 <section id="introduction">
-<h2 class="mb-4 flex items-center gap-2 text-2xl font-bold text-slate-900 dark:text-white">
-                            Introduction
+<h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                            Overview
                         </h2>
-<p class="mb-4 text-slate-600 dark:text-slate-400 leading-relaxed">
-                            Wallify IG simplifies the process of creating responsive, masonry-style grids with integrated image optimization and lazy-loading features. Built with performance in mind, it leverages the power of GPU-accelerated transforms to ensure smooth scrolling even with thousands of items.
+<p class="text-slate-600 mb-4">
+                            Wallify IG is the modern standard for Instagram marketing on Shopify. We optimize image loading using lazy-loading techniques to ensure your site's Lighthouse scores remain high while displaying high-resolution content.
                         </p>
+<div class="aspect-video w-full rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center overflow-hidden">
+<img alt="Dashboard interface showing Instagram feed settings" class="w-full h-full object-cover" data-alt="Screenshot of Wallify IG app dashboard showing gallery settings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKwbeAG2swBTMBqRoIXTWUslJBw9p4rp8xjp7cN0SF1xmGEaLXbMwwjCEuoh34cpHjObLmzRtyr0TCObXsoHH2L6BNvoot5E6EGRIXsR8J7ScufMg54B7Ox-_9WLT6PJ_IB8Ga2W4-noAK6W9XFvSyMg_-sw_v6qIg0zI8YcObVvYfZgAEvjAyVKG5Qhe3N3Uktw-128io4QhUrtI4eAx4FUGQF7SM2LFfPzd2RGSbJ-_RW1AA9M-zkZJVivrHNp3d8rmzHqGZqNA"/>
+</div>
 </section>
-<!-- Section: Install -->
-<section id="install">
-<h2 class="mb-4 text-2xl font-bold text-slate-900 dark:text-white">Quick Installation</h2>
-<p class="mb-6 text-slate-600 dark:text-slate-400">
-                            You can install the library via your favorite package manager. Open your terminal and run the following command:
+<section id="embedding">
+<h2 class="text-2xl font-bold text-slate-900 mb-4">Manual Embedding (Liquid)</h2>
+<p class="text-slate-600 mb-6">
+                            If you aren't using Shopify 2.0 Theme Blocks, you can manually embed your gallery by placing this snippet in your <code class="bg-slate-100 px-1.5 py-0.5 rounded text-primary text-sm font-mono">product.liquid</code> or <code class="bg-slate-100 px-1.5 py-0.5 rounded text-primary text-sm font-mono">index.liquid</code> file.
                         </p>
-<div class="relative group rounded-xl bg-slate-100 p-4 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-<div class="absolute right-4 top-4 flex items-center gap-2">
-<span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">bash</span>
-<button class="flex h-8 w-8 items-center justify-center rounded-full bg-white text-slate-500 shadow-sm transition-all hover:text-primary dark:bg-slate-800">
-<span class="material-symbols-outlined text-lg">content_copy</span>
+<!-- Code Block -->
+<div class="rounded-xl bg-slate-50 border border-slate-200 overflow-hidden font-mono text-sm">
+<div class="flex items-center justify-between px-4 py-2 border-b border-slate-200 bg-white">
+<span class="text-slate-400 text-xs font-medium uppercase tracking-widest">liquid</span>
+<button class="flex items-center gap-1.5 text-primary hover:text-primary/80 transition-colors">
+<span class="material-symbols-outlined text-base">content_copy</span>
+<span class="text-xs font-bold">Copy</span>
 </button>
 </div>
-<pre class="overflow-x-auto font-mono text-sm leading-6 text-slate-700 dark:text-slate-300"><code>npm install @wallify/ig-core</code></pre>
+<div class="p-4 overflow-x-auto">
+<pre class="text-slate-800"><code><span class="text-slate-400">&lt;!-- Wallify IG Gallery Widget --&gt;</span>
+<span class="text-blue-600">{%</span> <span class="text-purple-600">render</span> <span class="text-green-600">'wallify-gallery'</span>, 
+   gallery_id: <span class="text-orange-600">'main_homepage'</span>,
+   layout: <span class="text-orange-600">'grid'</span>,
+   columns: <span class="text-orange-600">4</span>
+<span class="text-blue-600">%}</span></code></pre>
 </div>
-<p class="mt-6 text-slate-600 dark:text-slate-400">
-                            Alternatively, if you prefer yarn:
-                        </p>
-<div class="relative group mt-4 rounded-xl bg-slate-100 p-4 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-<pre class="overflow-x-auto font-mono text-sm leading-6 text-slate-700 dark:text-slate-300"><code>yarn add @wallify/ig-core</code></pre>
 </div>
 </section>
-<!-- Section: API -->
-<section id="api">
-<h2 class="mb-4 text-2xl font-bold text-slate-900 dark:text-white">Basic Usage</h2>
-<p class="mb-6 text-slate-600 dark:text-slate-400">
-                            Initialize the Wallify instance by passing a container element and your configuration options. Here's a simple example:
+<section id="custom-css">
+<h3 class="text-xl font-bold text-slate-900 mb-4">Styling with CSS Variables</h3>
+<p class="text-slate-600 mb-6">
+                            Customize the appearance globally using our CSS custom properties. Add this to your main stylesheet:
                         </p>
-<div class="rounded-xl bg-slate-100 p-5 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-<pre class="overflow-x-auto font-mono text-sm leading-6 text-slate-700 dark:text-slate-300"><code><span class="text-primary" style="color: #FF2D7A;">import</span> { Wallify } <span class="text-primary" style="color: #FF2D7A;">from</span> <span class="text-emerald-600">'@wallify/ig-core'</span>;
-
-<span class="text-slate-400">// Initialize the grid</span>
-<span class="text-primary" style="color: #FF2D7A;">const</span> wall = <span class="text-primary" style="color: #FF2D7A;">new</span> Wallify({
-  container: <span class="text-emerald-600">'#grid-container'</span>,
-  columns: 3,
-  gutter: 16,
-  animate: <span class="text-amber-600">true</span>
-});
-
-wall.render();</code></pre>
+<div class="rounded-xl bg-slate-50 border border-slate-200 overflow-hidden font-mono text-sm">
+<div class="flex items-center justify-between px-4 py-2 border-b border-slate-200 bg-white">
+<span class="text-slate-400 text-xs font-medium uppercase tracking-widest">css</span>
+<button class="flex items-center gap-1.5 text-primary hover:text-primary/80 transition-colors">
+<span class="material-symbols-outlined text-base">content_copy</span>
+<span class="text-xs font-bold">Copy</span>
+</button>
 </div>
-<div class="mt-8 rounded-xl border p-6" style="background: linear-gradient(135deg, rgba(255,106,61,0.1), rgba(255,45,122,0.1)); border: 1px solid #FF2D7A;">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary" style="color: #FF2D7A;">info</span>
-<div>
-<h4 class="font-bold text-primary" style="color: #FF2D7A;">Pro Tip</h4>
-<p class="text-sm text-slate-600 dark:text-slate-400">Ensure your container has a defined width. Wallify calculates item positions based on the parent's current bounding client rect.</p>
-</div>
+<div class="p-4 overflow-x-auto">
+<pre class="text-slate-800"><code><span class="text-blue-600">:root</span> {
+  <span class="text-slate-400">--wallify-border-radius</span>: <span class="text-orange-600">12px</span>;
+  <span class="text-slate-400">--wallify-grid-gap</span>: <span class="text-orange-600">16px</span>;
+  <span class="text-slate-400">--wallify-accent-color</span>: <span class="text-primary">#ff5a3d</span>;
+}</code></pre>
 </div>
 </div>
 </section>
 </div>
-<!-- Pagination Footer -->
-<div class="mt-16 flex items-center justify-between border-t border-slate-200 pt-8 dark:border-slate-800">
-<a class="group flex flex-col items-start gap-1" href="#">
-<span class="text-xs font-semibold text-slate-500 uppercase">Previous</span>
-<span class="flex items-center gap-1 font-bold text-primary group-hover:underline" style="color: #FF2D7A;">
-<span class="material-symbols-outlined text-sm">arrow_back</span>
-                            Introduction
-                        </span>
-</a>
-<a class="group flex flex-col items-end gap-1 text-right" href="#">
-<span class="text-xs font-semibold text-slate-500 uppercase">Next</span>
-<span class="flex items-center gap-1 font-bold text-primary group-hover:underline" style="color: #FF2D7A;">
-                            Prerequisites
-                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</span>
-</a>
+<!-- Feedback Section -->
+<footer class="mt-20 pt-8 border-t border-slate-100">
+<div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+<div class="text-center sm:text-left">
+<h4 class="font-bold text-slate-900 mb-1">Was this page helpful?</h4>
+<p class="text-sm text-slate-500">Your feedback helps us improve the documentation.</p>
 </div>
+<div class="flex gap-3">
+<button class="flex items-center gap-2 px-4 py-2 border border-slate-200 rounded-lg text-sm font-medium hover:bg-slate-50 hover:border-slate-300 transition-all">
+<span class="material-symbols-outlined text-lg text-slate-400">thumb_up</span>
+                                Yes
+                            </button>
+<button class="flex items-center gap-2 px-4 py-2 border border-slate-200 rounded-lg text-sm font-medium hover:bg-slate-50 hover:border-slate-300 transition-all">
+<span class="material-symbols-outlined text-lg text-slate-400">thumb_down</span>
+                                No
+                            </button>
+</div>
+</div>
+<div class="mt-16 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400 uppercase tracking-widest font-bold">
+<p>© 2024 Wallify IG Inc. Built for Shopify.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms</a>
+<a class="hover:text-primary transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</footer>
 </div>
 </main>
-<!-- Right Sidebar (TOC) -->
-<aside class="fixed bottom-0 right-0 top-16 hidden w-64 overflow-y-auto px-8 py-8 lg:block">
-<h5 class="mb-4 text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-slate-100">On this page</h5>
-<ul class="space-y-3 text-sm">
-<li><a class="text-slate-600 hover:text-primary dark:text-slate-400" href="#introduction">Introduction</a></li>
-<li><a class="text-slate-600 hover:text-primary dark:text-slate-400" href="#install">Quick Installation</a></li>
-<li><a class="text-slate-600 hover:text-primary dark:text-slate-400" href="#api">Basic Usage</a></li>
-<li><a class="text-slate-600 hover:text-primary dark:text-slate-400" href="#configuration">Configuration Options</a></li>
+<!-- Right TOC Sidebar (Desktop only) -->
+<aside class="hidden xl:block w-64 sticky top-16 h-[calc(100vh-4rem)] py-10 pl-8 overflow-y-auto">
+<h5 class="text-xs font-semibold uppercase tracking-wider text-slate-900 mb-4">On this page</h5>
+<ul class="space-y-3 text-sm text-slate-500 font-medium">
+<li><a class="hover:text-primary transition-colors border-l-2 border-transparent pl-4 hover:border-primary" href="#introduction">Overview</a></li>
+<li><a class="hover:text-primary transition-colors border-l-2 border-transparent pl-4 hover:border-primary" href="#embedding">Manual Embedding</a></li>
+<li><a class="hover:text-primary transition-colors border-l-2 border-transparent pl-4 hover:border-primary" href="#custom-css">Custom CSS</a></li>
+<li><a class="hover:text-primary transition-colors border-l-2 border-transparent pl-4 hover:border-primary" href="#">Shopify 2.0 Blocks</a></li>
+<li><a class="hover:text-primary transition-colors border-l-2 border-transparent pl-4 hover:border-primary" href="#">Common Errors</a></li>
 </ul>
-<div class="mt-12 rounded-2xl bg-slate-50 p-6 dark:bg-slate-900/50">
-<p class="text-xs font-semibold text-slate-900 dark:text-white">Need help?</p>
-<p class="mt-2 text-xs leading-relaxed text-slate-500">Join our Discord community or check the FAQs.</p>
-<button class="mt-4 flex w-full items-center justify-center gap-2 rounded-full border border-slate-200 bg-white py-2 text-xs font-bold shadow-sm transition-all hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-800">
-<span class="material-symbols-outlined text-sm">forum</span>
-                    Community
-                </button>
+<div class="mt-10 p-4 rounded-xl bg-slate-50 border border-slate-200">
+<p class="text-xs font-bold text-slate-900 mb-2 uppercase tracking-tight">Need direct help?</p>
+<p class="text-xs text-slate-500 leading-relaxed mb-3">Our support team is available Mon-Fri, 9am-5pm EST.</p>
+<a class="text-xs text-primary font-bold flex items-center gap-1 hover:underline" href="#">
+                    Chat with us <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
 </div>
 </aside>
-</div>
-<!-- Mobile Bottom Menu -->
-<div class="fixed bottom-0 left-0 z-50 flex h-16 w-full items-center justify-around border-t border-slate-200 bg-white md:hidden dark:border-slate-800 dark:bg-background-dark">
-<button class="flex flex-col items-center text-primary" style="color: #FF2D7A;">
-<span class="material-symbols-outlined">menu_book</span>
-<span class="text-[10px] font-bold">Docs</span>
-</button>
-<button class="flex flex-col items-center text-slate-400">
-<span class="material-symbols-outlined">search</span>
-<span class="text-[10px] font-bold">Search</span>
-</button>
-<button class="flex flex-col items-center text-slate-400">
-<span class="material-symbols-outlined">settings</span>
-<span class="text-[10px] font-bold">Settings</span>
-</button>
 </div>
 </body></html>

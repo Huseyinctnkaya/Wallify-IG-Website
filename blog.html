@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wallify IG | Blog - Elevate Your Shopify Store</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff5a3d",
+                        "background-light": "#ffffff",
+                        "background-dark": "#23120f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#181210] dark:text-white transition-colors duration-300">
+<!-- Global Navigation -->
+<header class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-[#f5f0f0] dark:border-white/10">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-10">
+<a class="flex items-center gap-2 group" href="#">
+<div class="size-8 bg-primary text-white flex items-center justify-center rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-xl">grid_view</span>
+</div>
+<h1 class="text-xl font-extrabold tracking-tight text-[#181210] dark:text-white">Wallify IG</h1>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold text-[#181210]/70 dark:text-white/70 hover:text-primary dark:hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-semibold text-[#181210]/70 dark:text-white/70 hover:text-primary dark:hover:text-primary transition-colors" href="features.html">Features</a>
+<a class="text-sm font-semibold text-[#181210]/70 dark:text-white/70 hover:text-primary dark:hover:text-primary transition-colors" href="pricing.html">Pricing</a>
+<a class="text-sm font-semibold text-primary border-b-2 border-primary transition-colors" href="blog.html">Blog</a>
+<a class="text-sm font-semibold text-[#181210]/70 dark:text-white/70 hover:text-primary dark:hover:text-primary transition-colors" href="docs.html">Docs</a>
+<a class="text-sm font-semibold text-[#181210]/70 dark:text-white/70 hover:text-primary dark:hover:text-primary transition-colors" href="support.html">Support</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-[#f5f0f0] dark:bg-white/5 rounded-full px-4 py-2 gap-2">
+<span class="material-symbols-outlined text-[#8d655e] dark:text-white/50 text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm placeholder-[#8d655e] dark:placeholder-white/30 w-40" placeholder="Search articles..." type="text"/>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-md shadow-primary/20">
+                    Get Started
+                </button>
+</div>
+</div>
+</header>
+<main>
+<!-- Category Filters -->
+<section class="max-w-7xl mx-auto px-6 py-8">
+<div class="flex items-center gap-3 overflow-x-auto pb-4 scrollbar-hide">
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-primary text-white text-sm font-bold">All Posts</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-[#f5f0f0] dark:bg-white/5 text-[#181210] dark:text-white text-sm font-semibold hover:bg-[#ece6e6] transition-colors">Marketing Tips</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-[#f5f0f0] dark:bg-white/5 text-[#181210] dark:text-white text-sm font-semibold hover:bg-[#ece6e6] transition-colors">Product Updates</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-[#f5f0f0] dark:bg-white/5 text-[#181210] dark:text-white text-sm font-semibold hover:bg-[#ece6e6] transition-colors">Instagram Trends</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-[#f5f0f0] dark:bg-white/5 text-[#181210] dark:text-white text-sm font-semibold hover:bg-[#ece6e6] transition-colors">Success Stories</button>
+</div>
+</section>
+<!-- Featured Article -->
+<section class="max-w-7xl mx-auto px-6 mb-20">
+<div class="relative group cursor-pointer overflow-hidden rounded-2xl bg-white dark:bg-white/5 flex flex-col lg:flex-row gap-8 items-center border border-[#f5f0f0] dark:border-white/10 p-4 lg:p-0">
+<div class="w-full lg:w-3/5 h-[400px] overflow-hidden rounded-xl lg:rounded-none">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern smartphone displaying a professional Instagram shopping feed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGSJi2HieBRHzS3lyzG-6wSH-5C5WojPC3ecHJSgdhKk2ALFNP_W6SPp7XQVWjiApN7pNyyoiN54r15tk7buukeqDXQG1x0sV0vkrU_gVGUKIL6OGp2m0UtrE--y9KuC831y586ExBS4GrQU-Hqsth-PidQK6eH7p5Hji8LWTk__F1FsBue9KkulSk9QdZ5uBT1WHMW4tRCjqreF7siqPPVTttuIPqRsgq9v9X16wSoC48ScXYSRcYinvT8kbwo7Kaeuzi4We9FPM"/>
+</div>
+<div class="w-full lg:w-2/5 lg:pr-12 lg:py-12">
+<div class="flex items-center gap-3 mb-6">
+<span class="text-xs font-black tracking-widest uppercase text-primary bg-primary/10 px-3 py-1 rounded">Marketing Tips</span>
+<span class="text-xs text-[#181210]/50 dark:text-white/50 font-medium">8 min read</span>
+</div>
+<h2 class="text-3xl lg:text-5xl font-extrabold text-[#181210] dark:text-white leading-tight mb-6">
+                        How to Transform Your Shopify Store with a Shoppable Instagram Feed
+                    </h2>
+<p class="text-lg text-[#181210]/70 dark:text-white/70 leading-relaxed mb-8">
+                        Learn the best practices for integrating social proof directly into your storefront to drive conversions and engagement. Discover how top brands leverage Wallify IG to increase their AOV.
+                    </p>
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-full bg-primary/20 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Author portrait of a digital marketing specialist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmSkRNe881SPyWTqYSuaTgepWMW950pUVFUCcm4Wt324Bxvb87B0RBK9NH4-_PcISKj5Qvlm-spLiHqudxwhUGe_KVZzn9kfuPZaqbC4Q3xgaVoYCabPFZwfNfYW8Ms8AwWDE2YbyXPB_nVPhUS0D_Pil654nWns2YOSqcvra6liouDFnYGmJ2cTsJ3Z-wtvjg-7K-HM0AwdNxoMeGhT28wAOW7KMtUXwTQ6rEvaANiB-cNYnwQxquOd0vhWohCenb7IhV4h1rEOI"/>
+</div>
+<div>
+<p class="text-sm font-bold text-[#181210] dark:text-white">Alex Rivera</p>
+<p class="text-xs text-[#181210]/50 dark:text-white/50">Oct 24, 2023</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="bg-[#f5f0f0] dark:bg-white/5 py-16 mb-20">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<h3 class="text-3xl font-extrabold mb-4">Level up your eCommerce game</h3>
+<p class="text-[#181210]/60 dark:text-white/60 mb-8 max-w-lg mx-auto">Get weekly insights on Instagram trends, Shopify growth hacks, and social commerce news delivered to your inbox.</p>
+<form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+<input class="flex-1 rounded-full border-none px-6 py-4 dark:bg-background-dark focus:ring-2 focus:ring-primary shadow-sm" placeholder="Your work email" type="email"/>
+<button class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full font-bold transition-all whitespace-nowrap">
+                        Subscribe Now
+                    </button>
+</form>
+</div>
+</section>
+<!-- Article Grid -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Post 1 -->
+<article class="group">
+<div class="aspect-[16/10] rounded-xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Abstract marketing growth visualization with colorful elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA58vWlhVSb5SwLfafmflW540OIlHiOlcC96z3hxuTW2LlDwqGcybQ2_-yG6eoXW6vTuzdJbgCaLF2AXThU_6bSE0OA1XdVpH6YA1RCAPT9m71abYadFz7zjHYs1fePz7s6BtYUB97OMnL8x53ZiFzgpVqgbUecKmrlIyqo6Q1_hvW0q5WclQNgr1kbC6ySi06l28IyBVP7T7WssaWX3C66z5Izib0Gkk-a_-2eWJ5HO__0zuLavM0J-UOHhysws5Bms6_7wv7IVGM"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-[10px] font-black tracking-[0.2em] uppercase text-primary">Case Study</span>
+<span class="text-xs text-[#181210]/40 dark:text-white/40">5 min read</span>
+</div>
+<h3 class="text-xl font-bold leading-snug group-hover:text-primary transition-colors">
+                            5 Apps to Boost Your Store’s Engagement Today
+                        </h3>
+<p class="text-sm text-[#181210]/60 dark:text-white/60 line-clamp-2">
+                            Curated tools that help Shopify merchants turn browsers into buyers through social proof and better UX.
+                        </p>
+</div>
+</article>
+<!-- Post 2 -->
+<article class="group">
+<div class="aspect-[16/10] rounded-xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Digital dashboard showing positive growth metrics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoRsvcnTopOGVi-Q8OEbbLU4W8YrXzoV9SwlymHObI7AH8pX2FrRF4zLqZe-5X4lQW0IuRL-Cy2AL2vLIPFVfBm_vnuQhQab6x4YynG7B-YJCikrQ7Mfr4pKbxZFVKJU0_xaZUp4VWbyikLxKpftgCpAxqHtFN936gUgPx-Y2q4k48T3JSLyGU-Uwmt4RhVop6WGr3xsQYIvYL2Mz4Pp8bZCUhy5-HAJrVOTZT2g6y1MrkWx3YGGelROvUvk3Bsmxu4j1KKHZeBQE"/>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-[10px] font-black tracking-[0.2em] uppercase text-primary">Product Updates</span>
+<span class="text-xs text-[#181210]/40 dark:text-white/40">3 min read</span>
+</div>
+<h3 class="text-xl font-bold leading-snug group-hover:text-primary transition-colors">
+                            Wallify IG Version 2.0: AI-Powered Tagging is Here
+                        </h3>
+<p class="text-sm text-[#181210]/60 dark:text-white/60 line-clamp-2">
+                            Introducing our biggest update yet—automatically tag products in your feed with our new machine learning engine.
+                        </p>
+</div>
+</article>
+<!-- Post 3 -->
+<article class="group">
+<div class="aspect-[16/10] rounded-xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Team of young professionals collaborating on a strategy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_oQsSdJzfqV6ypderRzMNe-a6QaaS1T6ZmPeM8M4wkfGHNHwdhNZDYUjmwt1Y84yU342LwKLsRyZsV-8wnsEA85vp7qrR7Q6z7KhHMqF0_Vqfz8x9XTgDi7t4Spi7yHTdiR4wM8s6OIBT7sUPBzBSXL2WDGVZKIl4GcMvBRgfPzDDy_vG_VZBaR8-FUXHCUg1lqli9lmz2ysc04SfXn_1qj9-YknFZEL3wjp_AEpQqnIbCj49dn4-c69buPQ_MCSDSZI0iwKI66s"/>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-[10px] font-black tracking-[0.2em] uppercase text-primary">Trends</span>
+<span class="text-xs text-[#181210]/40 dark:text-white/40">12 min read</span>
+</div>
+<h3 class="text-xl font-bold leading-snug group-hover:text-primary transition-colors">
+                            The Power of User-Generated Content in 2024
+                        </h3>
+<p class="text-sm text-[#181210]/60 dark:text-white/60 line-clamp-2">
+                            Why real customer photos are outperforming studio-lit professional photography for Shopify merchants.
+                        </p>
+</div>
+</article>
+<!-- Post 4 -->
+<article class="group">
+<div class="aspect-[16/10] rounded-xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Minimal workspace with phone and coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCet4UpXevsOookgOFWdVXtC2BVCuV3ArETqMFEYoOey7fN-s589H86paFMOs0gaeMJx_m4Lz3Fy_1epBekGXnjYrx4eqsgvJ-He3Vvy-GFLzGvQsk2rLh-ycAkj7O4sbK9De39Ki3rpUd--cMCbJ873tfCtvLU89IfYTWMmGrBW-ZekaSL6qjBDRqnNoxljC6741jThh-B_08QX-0a1CQDfsCdaUDgyV6aMNTXYfUoa9pmF5FlMnSg3t-ZcWBIS-Y8iYSc5NJ952s"/>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-[10px] font-black tracking-[0.2em] uppercase text-primary">Best Practices</span>
+<span class="text-xs text-[#181210]/40 dark:text-white/40">6 min read</span>
+</div>
+<h3 class="text-xl font-bold leading-snug group-hover:text-primary transition-colors">
+                            How to Curate the Perfect Instagram Feed
+                        </h3>
+<p class="text-sm text-[#181210]/60 dark:text-white/60 line-clamp-2">
+                            A step-by-step guide to choosing the right photos from your Instagram to match your brand's aesthetic.
+                        </p>
+</div>
+</article>
+<!-- Post 5 -->
+<article class="group">
+<div class="aspect-[16/10] rounded-xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Bright and airy retail store interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwLEqGcZOB0jICwt-6KJ1_o32PeR3Dg7CqgkObFYDhIPPO4ACFHX1ZZgLRf2oZGEySyZE7tlSaaP_3mGXNRr7KlcZiTCU3IaVISQqBCY7plAqCBNr2asVIaHyIVMVjUAVpNILKH7H7l6OD__gD_T0YMFU_aHnbfpIXZZJLbojFs-HLRUjznfo0NAj-4JFB7uOTqua61pFgGxqAoi90xFgFtrSRYsqD4M0zq543b_JvKF1pzuUoOJfBiwLmrz5--pK1q3JCYq7B4aQ"/>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-[10px] font-black tracking-[0.2em] uppercase text-primary">Growth</span>
+<span class="text-xs text-[#181210]/40 dark:text-white/40">9 min read</span>
+</div>
+<h3 class="text-xl font-bold leading-snug group-hover:text-primary transition-colors">
+                            Case Study: How 'Moda Mia' Increased Revenue by 34%
+                        </h3>
+<p class="text-sm text-[#181210]/60 dark:text-white/60 line-clamp-2">
+                            A deep dive into how a small fashion boutique scaled using shoppable feeds.
+                        </p>
+</div>
+</article>
+<!-- Post 6 -->
+<article class="group">
+<div class="aspect-[16/10] rounded-xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Person using a laptop for web design work" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCGVNcoE2CzuSkfAFJust5NpkMcnfb69_FmyisCS8zNyWstkCVk2Gz0CryrRuzuHqIioRRqybMzg9cdBhSz9XBOJXOpVdCGc2ldaDAbDYLh9ynKAIF_33DjavoyqzWKvRdUnOmnDONoDpx9IXcv8TxwdrFUBCoB2Pmw6z4dFCgergSPqSMuEMCoRS6LV_h5qTy7KrWV4Rgp3KJW2CMSlRCjJM6TeF1OfHyY6G3pFIXjRLp0Zq2LRn0XyVOuULZrAVaewFL3cxtpX0"/>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-[10px] font-black tracking-[0.2em] uppercase text-primary">Design</span>
+<span class="text-xs text-[#181210]/40 dark:text-white/40">4 min read</span>
+</div>
+<h3 class="text-xl font-bold leading-snug group-hover:text-primary transition-colors">
+                            UI/UX Trends for eCommerce Stores in 2024
+                        </h3>
+<p class="text-sm text-[#181210]/60 dark:text-white/60 line-clamp-2">
+                            Staying ahead of the curve with clean design, micro-interactions, and social integration.
+                        </p>
+</div>
+</article>
+</div>
+<!-- Pagination -->
+<div class="mt-20 flex justify-center items-center gap-2">
+<button class="size-10 flex items-center justify-center rounded-lg border border-[#f5f0f0] dark:border-white/10 hover:bg-[#f5f0f0] dark:hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<button class="size-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
+<button class="size-10 flex items-center justify-center rounded-lg border border-[#f5f0f0] dark:border-white/10 hover:bg-[#f5f0f0] dark:hover:bg-white/5 transition-colors font-bold">2</button>
+<button class="size-10 flex items-center justify-center rounded-lg border border-[#f5f0f0] dark:border-white/10 hover:bg-[#f5f0f0] dark:hover:bg-white/5 transition-colors font-bold">3</button>
+<button class="size-10 flex items-center justify-center rounded-lg border border-[#f5f0f0] dark:border-white/10 hover:bg-[#f5f0f0] dark:hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Global Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-[#f5f0f0] dark:border-white/10 pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-20">
+<div class="lg:col-span-2 space-y-6">
+<div class="flex items-center gap-2">
+<div class="size-8 bg-primary text-white flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-xl">grid_view</span>
+</div>
+<h2 class="text-xl font-extrabold tracking-tight">Wallify IG</h2>
+</div>
+<p class="text-[#181210]/60 dark:text-white/60 max-w-sm">
+                    The highest-rated Instagram feed app for Shopify. Helping over 5,000+ merchants convert social engagement into sales.
+                </p>
+<div class="flex items-center gap-4">
+<a class="size-8 rounded-full bg-[#f5f0f0] dark:bg-white/5 flex items-center justify-center hover:text-primary transition-colors" href="#">
+<svg class="size-4" fill="currentColor" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+<a class="size-8 rounded-full bg-[#f5f0f0] dark:bg-white/5 flex items-center justify-center hover:text-primary transition-colors" href="#">
+<svg class="size-4" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6">Product</h4>
+<ul class="space-y-4 text-sm text-[#181210]/60 dark:text-white/60">
+<li><a class="hover:text-primary transition-colors" href="features.html">Features</a></li>
+<li><a class="hover:text-primary transition-colors" href="pricing.html">Pricing</a></li>
+<li><a class="hover:text-primary transition-colors" href="features.html">Showcase</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Affiliate Program</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Resources</h4>
+<ul class="space-y-4 text-sm text-[#181210]/60 dark:text-white/60">
+<li><a class="hover:text-primary transition-colors" href="blog.html">Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="support.html">Help Center</a></li>
+<li><a class="hover:text-primary transition-colors" href="docs.html">Developers</a></li>
+<li><a class="hover:text-primary transition-colors" href="docs.html">API Docs</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Company</h4>
+<ul class="space-y-4 text-sm text-[#181210]/60 dark:text-white/60">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="privacy.html">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 pt-10 border-t border-[#f5f0f0] dark:border-white/10 flex flex-col sm:flex-row justify-between items-center gap-6">
+<p class="text-xs text-[#181210]/40 dark:text-white/40">© 2024 Wallify IG. All rights reserved.</p>
+<div class="flex items-center gap-4 grayscale opacity-50">
+<div class="h-6 w-20 bg-gray-200 dark:bg-white/10 rounded"></div>
+<div class="h-6 w-20 bg-gray-200 dark:bg-white/10 rounded"></div>
+</div>
+</div>
+</footer>
+</body></html>

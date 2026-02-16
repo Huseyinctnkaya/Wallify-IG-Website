@@ -3,10 +3,10 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Pricing - Wallify IG</title>
+<title>Wallify IG | Pricing</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
@@ -14,27 +14,19 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#5048e5",
-                        "accent-coral": "#FF7F50",
-                        "background-light": "#f6f6f8",
-                        "background-dark": "#121121",
-                        "soft-pink": "#FDF2F8",
-                    },
-                    backgroundImage: {
-                        'ig-gradient': 'linear-gradient(135deg, #FF6A3D, #FF2D7A, #A855F7, #4F46E5)',
+                        "primary": "#ff5a3d",
+                        "background-light": "#f8f6f5",
+                        "background-dark": "#23120f",
                     },
                     fontFamily: {
                         "display": ["Inter", "sans-serif"]
                     },
                     borderRadius: {
-                        "DEFAULT": "1rem",
-                        "lg": "2rem",
-                        "xl": "3rem",
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
                         "full": "9999px"
                     },
-                    boxShadow: {
-                        'glow-pink': '0 0 25px 5px rgba(253, 242, 248, 0.9), 0 0 15px 2px rgba(80, 72, 229, 0.1)',
-                    }
                 },
             },
         }
@@ -43,267 +35,323 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
     </style>
 </head>
-<body class="bg-white dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-300">
-<!-- Top Navigation Bar -->
-<header class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-100 dark:border-slate-800">
-<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-300">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
 <div class="flex items-center gap-2">
-<div class="p-1.5 rounded-lg bg-ig-gradient">
-<svg class="w-6 h-6 text-white" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
-</svg>
+<div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+<span class="material-icons text-white text-xl">wallpaper</span>
 </div>
-<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Wallify IG</span>
+<span class="text-xl font-bold tracking-tight">Wallify<span class="text-primary">IG</span></span>
 </div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="index.html#features">Features</a>
-<a class="text-sm font-medium text-primary underline underline-offset-4 decoration-2" href="pricing.html">Pricing</a>
-<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="about.html">About</a>
-<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="mailto:support@wallifyig.com">Contact</a>
+<nav class="hidden md:flex space-x-8 text-sm font-medium">
+<a class="hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="hover:text-primary transition-colors" href="features.html">Features</a>
+<a class="text-primary" href="pricing.html">Pricing</a>
+<a class="hover:text-primary transition-colors" href="blog.html">Blog</a>
+<a class="hover:text-primary transition-colors" href="docs.html">Docs</a>
+<a class="hover:text-primary transition-colors" href="support.html">Support</a>
 </nav>
 <div class="flex items-center gap-4">
-<button class="hidden sm:block text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-primary px-4 py-2">Login</button>
-<button class="text-white text-sm font-bold px-6 py-2.5 rounded-full hover:shadow-lg hover:shadow-primary/30 transition-all bg-ig-gradient">Get Started</button>
+<button class="text-sm font-medium hover:text-primary px-4 py-2">Sign In</button>
+<button class="bg-primary text-white text-sm font-medium px-5 py-2 rounded-lg hover:brightness-110 transition-all shadow-sm">Get Started</button>
+</div>
 </div>
 </div>
 </header>
-<main class="relative overflow-hidden">
-<!-- Hero Background Ornament -->
-<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] pointer-events-none opacity-40">
-<div class="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent"></div>
-</div>
-<!-- Pricing Header -->
-<section class="relative pt-20 pb-12 px-6 text-center">
-<div class="max-w-3xl mx-auto">
-<h1 class="text-4xl md:text-6xl font-black text-slate-900 dark:text-white tracking-tight mb-6">
-                    Simple, transparent pricing
-                </h1>
+<main>
+<!-- Hero Section & Toggle -->
+<section class="py-16 px-4">
+<div class="max-w-3xl mx-auto text-center">
+<h1 class="text-4xl md:text-5xl font-extrabold mb-6">Simple pricing for creators.</h1>
 <p class="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed">
-                    Unlock the full potential of your Instagram growth with Wallify IG's powerful AI tools. Choose the plan that fits your ambition.
+                    Choose the plan that's right for your workflow. From solo hobbyists to enterprise-scale production teams.
                 </p>
-<!-- Billing Toggle -->
-<div class="flex items-center justify-center gap-4">
-<span class="text-sm font-semibold text-slate-500">Monthly</span>
-<div class="w-14 h-7 bg-slate-100 dark:bg-slate-800 rounded-full p-1 cursor-pointer flex items-center relative group">
-<div class="w-5 h-5 rounded-full translate-x-7 shadow-sm transition-transform duration-300 bg-ig-gradient"></div>
+<!-- Toggle -->
+<div class="flex items-center justify-center gap-4 mb-12">
+<span class="text-sm font-medium">Monthly</span>
+<button class="w-14 h-7 bg-primary/20 dark:bg-primary/10 rounded-full relative p-1 focus:outline-none">
+<div class="w-5 h-5 bg-primary rounded-full translate-x-7"></div>
+</button>
+<span class="text-sm font-medium">Yearly</span>
+<span class="bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">Save 20%</span>
 </div>
-<span class="text-sm font-semibold text-slate-900 dark:text-white flex items-center gap-2">
-                        Annual <span class="text-[10px] bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Save 20%</span>
-</span>
+</div>
+<!-- Pricing Cards -->
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+<!-- Basic -->
+<div class="bg-white dark:bg-zinc-900 p-8 rounded-xl border border-slate-200 dark:border-zinc-800 flex flex-col h-full hover:shadow-xl transition-shadow">
+<div class="mb-8">
+<h3 class="text-lg font-bold mb-2">Basic</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-6">For personal passion projects.</p>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-bold">$0</span>
+<span class="text-slate-500 text-sm">/mo</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-sm">
+<span class="material-icons text-primary text-lg">check_circle</span>
+                            5 Instagram Accounts
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-icons text-primary text-lg">check_circle</span>
+                            Standard Resolution
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-icons text-primary text-lg">check_circle</span>
+                            Community Support
+                        </li>
+</ul>
+<button class="w-full py-3 border border-primary text-primary font-bold rounded-lg hover:bg-primary/5 transition-colors">Start Free</button>
+</div>
+<!-- Pro -->
+<div class="bg-white dark:bg-zinc-900 p-8 rounded-xl border-2 border-primary relative flex flex-col h-full shadow-lg shadow-primary/5 transform md:-translate-y-4">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Most Popular</div>
+<div class="mb-8">
+<h3 class="text-lg font-bold mb-2">Pro</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-6">For professional creators.</p>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-bold">$19</span>
+<span class="text-slate-500 text-sm">/mo</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-icons text-primary text-lg">check_circle</span>
+                            Unlimited Accounts
+                        </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-icons text-primary text-lg">check_circle</span>
+                            4K High Resolution
+                        </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-icons text-primary text-lg">check_circle</span>
+                            Advanced Analytics
+                        </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-icons text-primary text-lg">check_circle</span>
+                            Priority Email Support
+                        </li>
+</ul>
+<button class="w-full py-3 bg-primary text-white font-bold rounded-lg hover:brightness-110 transition-all shadow-md">Go Pro</button>
+</div>
+<!-- Enterprise -->
+<div class="bg-white dark:bg-zinc-900 p-8 rounded-xl border border-slate-200 dark:border-zinc-800 flex flex-col h-full hover:shadow-xl transition-shadow">
+<div class="mb-8">
+<h3 class="text-lg font-bold mb-2">Enterprise</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-6">For large teams and agencies.</p>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-bold">Custom</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-sm">
+<span class="material-icons text-primary text-lg">check_circle</span>
+                            Custom API Access
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-icons text-primary text-lg">check_circle</span>
+                            Bulk Asset Management
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-icons text-primary text-lg">check_circle</span>
+                            Dedicated Manager
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-icons text-primary text-lg">check_circle</span>
+                            SSO &amp; Security Audit
+                        </li>
+</ul>
+<button class="w-full py-3 border border-slate-900 dark:border-slate-100 font-bold rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-800 transition-colors">Contact Sales</button>
 </div>
 </div>
 </section>
-<!-- Pricing Cards -->
-<section class="max-w-7xl mx-auto px-6 py-12">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-<!-- Starter Plan -->
-<div class="flex flex-col p-8 bg-white dark:bg-background-dark border-2 border-slate-100 dark:border-slate-800 rounded-xl transition-all hover:border-primary/20">
-<div class="mb-8">
-<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Starter</h3>
-<p class="text-sm text-slate-500 mb-6 leading-relaxed">Perfect for individuals just starting their growth journey.</p>
-<div class="flex items-baseline gap-1">
-<span class="text-4xl font-black text-slate-900 dark:text-white">$15</span>
-<span class="text-slate-500 font-medium">/mo</span>
-</div>
-</div>
-<ul class="flex-1 space-y-4 mb-8">
-<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            1 Instagram Account
-                        </li>
-<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            Basic Analytics Dashboard
-                        </li>
-<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            Standard Support
-                        </li>
-<li class="flex items-center gap-3 text-sm text-slate-400 line-through">
-<span class="material-symbols-outlined text-slate-300 text-xl">block</span>
-                            AI Content Generator
-                        </li>
-</ul>
-<button class="w-full py-3 px-6 rounded-full border-2 border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-colors bg-ig-gradient text-white">
-                        Get Started
-                    </button>
-</div>
-<!-- Pro Plan (Featured) -->
-<div class="flex flex-col p-8 bg-white dark:bg-slate-900 border-2 rounded-xl shadow-glow-pink relative z-10 scale-105 md:scale-110" style="border-image: linear-gradient(135deg, #FF6A3D, #FF2D7A, #A855F7, #4F46E5) 1; border-width: 4px;">
-<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full">
-                        Most Popular
-                    </div>
-<div class="mb-8">
-<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Pro</h3>
-<p class="text-sm text-slate-500 mb-6 leading-relaxed">Advanced tools for creators and growing influencers.</p>
-<div class="flex items-baseline gap-1">
-<span class="text-4xl font-black text-slate-900 dark:text-white">$49</span>
-<span class="text-slate-500 font-medium">/mo</span>
-</div>
-</div>
-<ul class="flex-1 space-y-4 mb-8">
-<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            5 Instagram Accounts
-                        </li>
-<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300 font-semibold">
-<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            AI Content Generator
-                        </li>
-<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            Priority Email Support
-                        </li>
-<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            Advanced Growth Metrics
-                        </li>
-<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
-<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            Scheduled Posting
-                        </li>
-</ul>
-<button class="w-full py-4 px-6 rounded-full text-white font-black text-sm hover:shadow-xl hover:shadow-accent-coral/40 transition-all bg-ig-gradient">
-                        Get Started Now
-                    </button>
-</div>
-<!-- Agency Plan -->
-<div class="flex flex-col p-8 bg-white dark:bg-background-dark border-2 border-slate-100 dark:border-slate-800 rounded-xl transition-all hover:border-primary/20">
-<div class="mb-8">
-<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Agency</h3>
-<p class="text-sm text-slate-500 mb-6 leading-relaxed">Enterprise solutions for management teams and agencies.</p>
-<div class="flex items-baseline gap-1">
-<span class="text-4xl font-black text-slate-900 dark:text-white">$99</span>
-<span class="text-slate-500 font-medium">/mo</span>
-</div>
-</div>
-<ul class="flex-1 space-y-4 mb-8">
-<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            20+ Instagram Accounts
-                        </li>
-<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            Team Collaboration Tools
-                        </li>
-<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            Custom Branded Reports
-                        </li>
-<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            Dedicated Account Manager
-                        </li>
-</ul>
-<button class="w-full py-3 px-6 rounded-full border-2 border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-colors bg-ig-gradient text-white">
-                        Contact Sales
-                    </button>
+<!-- Feature Comparison -->
+<section class="py-24 bg-white dark:bg-zinc-950/30">
+<div class="max-w-5xl mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-16">Compare all features</h2>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-slate-200 dark:border-zinc-800">
+<th class="py-6 px-4 text-sm font-semibold w-1/4">Features</th>
+<th class="py-6 px-4 text-sm font-semibold text-center">Basic</th>
+<th class="py-6 px-4 text-sm font-semibold text-center text-primary">Pro</th>
+<th class="py-6 px-4 text-sm font-semibold text-center">Enterprise</th>
+</tr>
+</thead>
+<tbody>
+<!-- Category Header -->
+<tr class="bg-slate-50/50 dark:bg-zinc-900/50">
+<td class="py-3 px-4 text-[10px] font-bold uppercase tracking-widest text-slate-400" colspan="4">Core Capabilities</td>
+</tr>
+<tr class="border-b border-slate-100 dark:border-zinc-800">
+<td class="py-5 px-4 text-sm">Monthly Exports</td>
+<td class="py-5 px-4 text-sm text-center">10</td>
+<td class="py-5 px-4 text-sm text-center font-medium">Unlimited</td>
+<td class="py-5 px-4 text-sm text-center">Unlimited</td>
+</tr>
+<tr class="border-b border-slate-100 dark:border-zinc-800">
+<td class="py-5 px-4 text-sm">Resolution</td>
+<td class="py-5 px-4 text-sm text-center">1080p</td>
+<td class="py-5 px-4 text-sm text-center font-medium">4K / HDR</td>
+<td class="py-5 px-4 text-sm text-center">Custom</td>
+</tr>
+<tr class="border-b border-slate-100 dark:border-zinc-800">
+<td class="py-5 px-4 text-sm">AI Enhancement</td>
+<td class="py-5 px-4 text-sm text-center text-slate-300">—</td>
+<td class="py-5 px-4 text-sm text-center"><span class="material-icons text-primary">check</span></td>
+<td class="py-5 px-4 text-sm text-center"><span class="material-icons text-primary">check</span></td>
+</tr>
+<!-- Category Header -->
+<tr class="bg-slate-50/50 dark:bg-zinc-900/50">
+<td class="py-3 px-4 text-[10px] font-bold uppercase tracking-widest text-slate-400" colspan="4">Team &amp; Support</td>
+</tr>
+<tr class="border-b border-slate-100 dark:border-zinc-800">
+<td class="py-5 px-4 text-sm">Team Seats</td>
+<td class="py-5 px-4 text-sm text-center">1</td>
+<td class="py-5 px-4 text-sm text-center font-medium">1</td>
+<td class="py-5 px-4 text-sm text-center">Unlimited</td>
+</tr>
+<tr class="border-b border-slate-100 dark:border-zinc-800">
+<td class="py-5 px-4 text-sm">Support response</td>
+<td class="py-5 px-4 text-sm text-center">48h</td>
+<td class="py-5 px-4 text-sm text-center font-medium">12h</td>
+<td class="py-5 px-4 text-sm text-center">Instant</td>
+</tr>
+<tr class="border-b border-slate-100 dark:border-zinc-800">
+<td class="py-5 px-4 text-sm">Custom API Access</td>
+<td class="py-5 px-4 text-sm text-center text-slate-300">—</td>
+<td class="py-5 px-4 text-sm text-center text-slate-300">—</td>
+<td class="py-5 px-4 text-sm text-center"><span class="material-icons text-primary">check</span></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </section>
 <!-- FAQ Section -->
-<section class="max-w-4xl mx-auto px-6 py-24">
-<div class="text-center mb-16">
-<h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">Frequently Asked Questions</h2>
-<p class="text-slate-500">Everything you need to know about Wallify IG plans.</p>
-</div>
+<section class="py-24 px-4 bg-background-light dark:bg-background-dark">
+<div class="max-w-3xl mx-auto">
+<h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
 <div class="space-y-4">
-<!-- FAQ Item 1 -->
-<div class="group border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden hover:bg-soft-pink dark:hover:bg-primary/10 transition-colors duration-300">
-<button class="w-full px-8 py-6 flex items-center justify-between text-left">
-<span class="font-bold text-slate-900 dark:text-white">Can I change plans at any time?</span>
-<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
+<div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-lg overflow-hidden">
+<button class="w-full flex justify-between items-center p-6 text-left focus:outline-none group">
+<span class="font-semibold">Can I upgrade or downgrade my plan later?</span>
+<span class="material-icons text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
 </button>
-<div class="px-8 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                        Yes! You can upgrade or downgrade your plan at any time from your account settings. If you upgrade, the new pricing will be prorated for the remainder of your billing cycle.
-                    </div>
+<div class="px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
+                            Yes, you can change your plan at any time. If you upgrade, the change is immediate. If you downgrade, it will take effect at the end of your current billing cycle.
+                        </div>
 </div>
-<!-- FAQ Item 2 -->
-<div class="group border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden hover:bg-soft-pink dark:hover:bg-primary/10 transition-colors duration-300">
-<button class="w-full px-8 py-6 flex items-center justify-between text-left">
-<span class="font-bold text-slate-900 dark:text-white">Is there a free trial available?</span>
-<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
+<div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-lg overflow-hidden">
+<button class="w-full flex justify-between items-center p-6 text-left focus:outline-none group">
+<span class="font-semibold">Is there a free trial for the Pro plan?</span>
+<span class="material-icons text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
 </button>
-<div class="hidden px-8 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                        We offer a 7-day free trial on our Starter and Pro plans so you can experience the power of Wallify IG risk-free.
-                    </div>
+<div class="hidden px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
+                            We offer a 14-day free trial for new Pro subscribers. No credit card is required to start testing the premium features.
+                        </div>
 </div>
-<!-- FAQ Item 3 -->
-<div class="group border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden hover:bg-soft-pink dark:hover:bg-primary/10 transition-colors duration-300">
-<button class="w-full px-8 py-6 flex items-center justify-between text-left">
-<span class="font-bold text-slate-900 dark:text-white">Does this comply with Instagram's terms?</span>
-<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
+<div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-lg overflow-hidden">
+<button class="w-full flex justify-between items-center p-6 text-left focus:outline-none group">
+<span class="font-semibold">What payment methods do you accept?</span>
+<span class="material-icons text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
 </button>
-<div class="hidden px-8 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                        Absolutely. Wallify IG uses official APIs and follows all best practices to ensure your account remains safe and compliant.
-                    </div>
+<div class="hidden px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
+                            We accept all major credit cards, PayPal, and Apple Pay. For Enterprise plans, we also support bank transfers and invoicing.
+                        </div>
 </div>
-<!-- FAQ Item 4 -->
-<div class="group border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden hover:bg-soft-pink dark:hover:bg-primary/10 transition-colors duration-300">
-<button class="w-full px-8 py-6 flex items-center justify-between text-left">
-<span class="font-bold text-slate-900 dark:text-white">What payment methods do you accept?</span>
-<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
+<div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-lg overflow-hidden">
+<button class="w-full flex justify-between items-center p-6 text-left focus:outline-none group">
+<span class="font-semibold">Do you offer discounts for non-profits?</span>
+<span class="material-icons text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
 </button>
-<div class="hidden px-8 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                        We accept all major credit cards, PayPal, and Apple Pay through our secure payment gateway.
-                    </div>
+<div class="hidden px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
+                            Yes! Registered 501(c)(3) organizations are eligible for a 50% discount on all Pro monthly and yearly plans. Contact our support team to apply.
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 px-4">
+<div class="max-w-5xl mx-auto bg-primary rounded-2xl p-12 text-center text-white relative overflow-hidden">
+<!-- Abstract Pattern Decoration -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+<h2 class="text-3xl font-bold mb-6 relative z-10">Ready to transform your Instagram feed?</h2>
+<p class="text-white/80 mb-10 text-lg relative z-10">Join over 10,000 creators using Wallify IG to scale their content.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+<button class="bg-white text-primary font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-all shadow-lg">Start for free</button>
+<button class="bg-transparent border border-white/30 text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-all">Schedule Demo</button>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-slate-50 dark:bg-background-dark border-t border-slate-100 dark:border-slate-800 pt-16 pb-8 px-6">
-<div class="max-w-7xl mx-auto">
-<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
-<div class="col-span-2 lg:col-span-2">
-<div class="flex items-center gap-2 mb-6 cursor-pointer" onclick="window.location.href='index.html'">
-<div class="p-1.5 rounded-lg">
-<svg class="w-5 h-5 text-white bg-ig-gradient" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
-</svg>
+<footer class="bg-white dark:bg-zinc-950 border-t border-slate-200 dark:border-zinc-800 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-16">
+<div class="col-span-2">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-6 h-6 bg-primary rounded flex items-center justify-center">
+<span class="material-icons text-white text-xs">wallpaper</span>
 </div>
-<span class="text-lg font-bold tracking-tight text-slate-900 dark:text-white">Wallify IG</span>
+<span class="text-lg font-bold">Wallify<span class="text-primary">IG</span></span>
 </div>
-<p class="text-sm text-slate-500 max-w-xs leading-relaxed">
-                        The world's most advanced Instagram growth and management platform. Grow smarter, not harder.
+<p class="text-slate-500 text-sm max-w-xs mb-6">
+                        Engineered tools for the modern digital creator. Aesthetic precision at scale.
                     </p>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full border border-slate-200 dark:border-zinc-800 flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary transition-all" href="#">
+<i class="material-icons text-sm">share</i>
+</a>
+<a class="w-8 h-8 rounded-full border border-slate-200 dark:border-zinc-800 flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary transition-all" href="#">
+<i class="material-icons text-sm">public</i>
+</a>
+<a class="w-8 h-8 rounded-full border border-slate-200 dark:border-zinc-800 flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary transition-all" href="#">
+<i class="material-icons text-sm">alternate_email</i>
+</a>
+</div>
 </div>
 <div>
-<h4 class="font-bold text-slate-900 dark:text-white text-sm mb-6">Product</h4>
-<ul class="space-y-4">
-<li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="index.html#features">Features</a></li>
-<li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="pricing.html">Pricing</a></li>
-<li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Case Studies</a></li>
+<h4 class="font-bold text-sm mb-6 uppercase tracking-wider">Product</h4>
+<ul class="space-y-4 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="features.html">Features</a></li>
+<li><a class="hover:text-primary transition-colors" href="docs.html">API Docs</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Integrations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Templates</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-bold text-slate-900 dark:text-white text-sm mb-6">Company</h4>
-<ul class="space-y-4">
-<li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="about.html">About Us</a></li>
-<li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Careers</a></li>
-<li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Blog</a></li>
+<h4 class="font-bold text-sm mb-6 uppercase tracking-wider">Company</h4>
+<ul class="space-y-4 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="blog.html">Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Press Kit</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-bold text-slate-900 dark:text-white text-sm mb-6">Support</h4>
-<ul class="space-y-4">
-<li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="faq.html">Help Center</a></li>
-<li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Terms of Service</a></li>
-<li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="impressum.html">Privacy Policy</a></li>
+<h4 class="font-bold text-sm mb-6 uppercase tracking-wider">Legal</h4>
+<ul class="space-y-4 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="privacy.html">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Use</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cookie Policy</a></li>
 </ul>
 </div>
 </div>
-<div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-slate-200 dark:border-slate-800 gap-4">
-<p class="text-xs text-slate-400">© 2024 Wallify IG. All rights reserved.</p>
+<div class="pt-8 border-t border-slate-100 dark:border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+<p>© 2024 Wallify IG Inc. All rights reserved.</p>
 <div class="flex items-center gap-6">
-<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined text-xl">language</span></a>
-<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
-<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined text-xl">alternate_email</span></a>
+<span>Status: All Systems Operational</span>
+<span>English (US)</span>
 </div>
 </div>
 </div>
