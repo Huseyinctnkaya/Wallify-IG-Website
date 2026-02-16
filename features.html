@@ -32,32 +32,7 @@
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-[#181210] dark:text-white transition-colors duration-300">
-<!-- Top Navigation Bar -->
-<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-solid border-[#e7dcda] dark:border-[#3a2a27] px-4 md:px-20 lg:px-40 py-4">
-<div class="flex items-center justify-between max-w-[1200px] mx-auto">
-<div class="flex items-center gap-2 text-primary">
-<div class="size-6">
-<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
-</svg>
-</div>
-<h2 class="text-[#181210] dark:text-white text-xl font-black leading-tight tracking-tight">Wallify IG</h2>
-</div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-[#181210] dark:text-white/80 text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
-<a class="text-[#181210] dark:text-white/80 text-sm font-semibold text-primary transition-colors" href="features.html">Features</a>
-<a class="text-[#181210] dark:text-white/80 text-sm font-semibold hover:text-primary transition-colors" href="pricing.html">Pricing</a>
-<a class="text-[#181210] dark:text-white/80 text-sm font-semibold hover:text-primary transition-colors" href="blog.html">Blog</a>
-<a class="text-[#181210] dark:text-white/80 text-sm font-semibold hover:text-primary transition-colors" href="docs.html">Docs</a>
-<a class="text-[#181210] dark:text-white/80 text-sm font-semibold hover:text-primary transition-colors" href="support.html">Support</a>
-</nav>
-<div class="flex items-center gap-4">
-<button class="bg-primary text-white text-sm font-bold px-5 py-2.5 rounded-lg hover:bg-opacity-90 transition-all shadow-sm">
-                    Install App
-                </button>
-</div>
-</div>
-</header>
+<div id="site-header"></div>
 <main class="max-w-[1200px] mx-auto overflow-x-hidden">
 <!-- Hero Section -->
 <section class="px-6 py-16 md:py-24 text-center">
@@ -229,54 +204,6 @@
 </div>
 </section>
 </main>
-<!-- Footer -->
-<footer class="bg-white dark:bg-background-dark border-t border-[#e7dcda] dark:border-[#3a2a27] py-16 px-6">
-<div class="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-12">
-<div class="col-span-2 md:col-span-1 space-y-4">
-<div class="flex items-center gap-2 text-primary">
-<div class="size-6">
-<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
-</svg>
-</div>
-<h2 class="text-[#181210] dark:text-white text-lg font-bold leading-tight">Wallify IG</h2>
-</div>
-<p class="text-sm text-[#8d655e] dark:text-white/60">The highest-rated Instagram feed app for Shopify stores. Trusted by brands worldwide.</p>
-</div>
-<div class="space-y-4">
-<h4 class="font-bold">Product</h4>
-<ul class="space-y-2 text-sm text-[#8d655e] dark:text-white/60">
-<li><a class="hover:text-primary transition-colors" href="features.html">Features</a></li>
-<li><a class="hover:text-primary transition-colors" href="features.html">Showcase</a></li>
-<li><a class="hover:text-primary transition-colors" href="pricing.html">Pricing</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Changelog</a></li>
-</ul>
-</div>
-<div class="space-y-4">
-<h4 class="font-bold">Company</h4>
-<ul class="space-y-2 text-sm text-[#8d655e] dark:text-white/60">
-<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
-<li><a class="hover:text-primary transition-colors" href="blog.html">Blog</a></li>
-<li><a class="hover:text-primary transition-colors" href="support.html">Contact</a></li>
-</ul>
-</div>
-<div class="space-y-4">
-<h4 class="font-bold">Legal</h4>
-<ul class="space-y-2 text-sm text-[#8d655e] dark:text-white/60">
-<li><a class="hover:text-primary transition-colors" href="privacy.html">Privacy Policy</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Cookie Policy</a></li>
-</ul>
-</div>
-</div>
-<div class="max-w-[1200px] mx-auto mt-16 pt-8 border-t border-[#e7dcda] dark:border-[#3a2a27] flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#8d655e] dark:text-white/40 font-medium">
-<p>© 2024 Wallify IG. All rights reserved.</p>
-<div class="flex gap-6">
-<a class="hover:text-primary" href="#">Twitter</a>
-<a class="hover:text-primary" href="#">LinkedIn</a>
-<a class="hover:text-primary" href="#">Instagram</a>
-</div>
-</div>
-</footer>
+<div id="site-footer"></div>
+<script src="components.js"></script>
 </body></html>

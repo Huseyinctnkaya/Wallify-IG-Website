@@ -33,42 +33,7 @@
     </style>
 </head>
 <body class="bg-white text-slate-900 antialiased font-display">
-<!-- Top Navigation -->
-<header class="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md">
-<div class="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-6 lg:px-10">
-<div class="flex items-center gap-8">
-<a class="flex items-center gap-2 group" href="#">
-<div class="bg-primary p-1.5 rounded-lg text-white group-hover:bg-primary/90 transition-colors">
-<span class="material-symbols-outlined block">grid_view</span>
-</div>
-<span class="text-xl font-bold tracking-tight text-slate-900">Wallify IG</span>
-</a>
-<div class="hidden md:flex relative w-80 group">
-<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-400 group-focus-within:text-primary transition-colors">
-<span class="material-symbols-outlined text-xl">search</span>
-</div>
-<input class="block w-full rounded-lg border-slate-200 bg-slate-50 py-2 pl-10 pr-3 text-sm placeholder:text-slate-400 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="Search documentation..." type="text"/>
-<div class="absolute inset-y-0 right-3 flex items-center pointer-events-none">
-<kbd class="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-semibold text-slate-500 bg-white border border-slate-200 rounded">⌘K</kbd>
-</div>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-slate-600">
-<a class="hover:text-primary transition-colors" href="index.html">Home</a>
-<a class="hover:text-primary transition-colors" href="features.html">Features</a>
-<a class="hover:text-primary transition-colors" href="pricing.html">Pricing</a>
-<a class="hover:text-primary transition-colors" href="blog.html">Blog</a>
-<a class="text-primary" href="docs.html">Docs</a>
-<a class="hover:text-primary transition-colors" href="support.html">Support</a>
-</nav>
-<div class="h-6 w-[1px] bg-slate-200 hidden sm:block"></div>
-<button class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all shadow-sm shadow-primary/20">
-                    Sign In
-                </button>
-</div>
-</div>
-</header>
+<div id="site-header"></div>
 <div class="mx-auto flex max-w-[1440px] px-6 lg:px-10">
 <!-- Sidebar Navigation -->
 <aside class="fixed top-16 bottom-0 left-0 z-40 hidden w-72 overflow-y-auto border-r border-slate-200 px-6 py-8 lg:sticky lg:block">
@@ -274,4 +239,6 @@
 </div>
 </aside>
 </div>
+<div id="site-footer"></div>
+<script src="components.js"></script>
 </body></html>
