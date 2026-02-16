@@ -217,40 +217,56 @@
 <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
 <div class="space-y-4">
 <div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-lg overflow-hidden">
-<button class="w-full flex justify-between items-center p-6 text-left focus:outline-none group">
+<button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none group">
 <span class="font-semibold">Can I upgrade or downgrade my plan later?</span>
-<span class="material-icons text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
+<span class="material-icons text-slate-400 group-hover:text-primary transition-transform duration-300">expand_more</span>
 </button>
+<div class="faq-answer grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
+<div class="overflow-hidden">
 <div class="px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
                             Yes, you can change your plan at any time. If you upgrade, the change is immediate. If you downgrade, it will take effect at the end of your current billing cycle.
-                        </div>
+</div>
+</div>
+</div>
 </div>
 <div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-lg overflow-hidden">
-<button class="w-full flex justify-between items-center p-6 text-left focus:outline-none group">
+<button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none group">
 <span class="font-semibold">Is there a free trial for the Pro plan?</span>
-<span class="material-icons text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
+<span class="material-icons text-slate-400 group-hover:text-primary transition-transform duration-300">expand_more</span>
 </button>
-<div class="hidden px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
+<div class="faq-answer grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
+<div class="overflow-hidden">
+<div class="px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
                             We offer a 14-day free trial for new Pro subscribers. No credit card is required to start testing the premium features.
-                        </div>
+</div>
+</div>
+</div>
 </div>
 <div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-lg overflow-hidden">
-<button class="w-full flex justify-between items-center p-6 text-left focus:outline-none group">
+<button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none group">
 <span class="font-semibold">What payment methods do you accept?</span>
-<span class="material-icons text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
+<span class="material-icons text-slate-400 group-hover:text-primary transition-transform duration-300">expand_more</span>
 </button>
-<div class="hidden px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
+<div class="faq-answer grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
+<div class="overflow-hidden">
+<div class="px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
                             We accept all major credit cards, PayPal, and Apple Pay. For Enterprise plans, we also support bank transfers and invoicing.
-                        </div>
+</div>
+</div>
+</div>
 </div>
 <div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-lg overflow-hidden">
-<button class="w-full flex justify-between items-center p-6 text-left focus:outline-none group">
+<button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none group">
 <span class="font-semibold">Do you offer discounts for non-profits?</span>
-<span class="material-icons text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
+<span class="material-icons text-slate-400 group-hover:text-primary transition-transform duration-300">expand_more</span>
 </button>
-<div class="hidden px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
+<div class="faq-answer grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
+<div class="overflow-hidden">
+<div class="px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
                             Yes! Registered 501(c)(3) organizations are eligible for a 50% discount on all Pro monthly and yearly plans. Contact our support team to apply.
-                        </div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -272,4 +288,23 @@
 </main>
 <div id="site-footer"></div>
 <script src="components.js"></script>
+<script>
+document.querySelectorAll('.faq-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector('.material-icons');
+    const isOpen = answer.classList.contains('grid-rows-[1fr]');
+
+    // Close all
+    document.querySelectorAll('.faq-answer').forEach(a => a.classList.replace('grid-rows-[1fr]', 'grid-rows-[0fr]'));
+    document.querySelectorAll('.faq-toggle .material-icons').forEach(i => i.classList.remove('rotate-180'));
+
+    // Open clicked if it was closed
+    if (!isOpen) {
+      answer.classList.replace('grid-rows-[0fr]', 'grid-rows-[1fr]');
+      icon.classList.add('rotate-180');
+    }
+  });
+});
+</script>
 </body></html>
