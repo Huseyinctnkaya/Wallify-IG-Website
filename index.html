@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wallify IG | Shoppable Instagram Feeds for Shopify</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5048e5",
+                        "accent-coral": "#FF6A3D",
+                        "accent-blue": "#3B82F6",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121121",
+                        "soft-gray": "#F3F4F6"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient-blob {
+            background: linear-gradient(135deg, #FF6A3D, #FF2D7A, #A855F7, #4F46E5);
+            filter: blur(100px);
+            opacity: 0.15;
+            z-index: -1;
+        }
+        .shoppable-hotspot {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.7; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .cta-glow {
+            box-shadow: 0 0 20px rgba(255, 106, 61, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 font-display selection:bg-primary/20">
+<!-- Sticky Navigation -->
+<nav class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-slate-100">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2 group cursor-pointer" onclick="window.location.href='index.html'">
+<div class="size-10 bg-primary rounded-xl flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl">grid_view</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-slate-900">Wallify IG</span>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="index.html#features">Features</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="index.html#showcase">Showcase</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="pricing.html">Pricing</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="docs.html">Resources</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden sm:block px-6 py-2.5 text-sm font-bold text-slate-700 hover:bg-slate-50 rounded-full transition-all">Login</button>
+<button class="px-6 py-2.5 bg-primary text-white text-sm font-bold rounded-full hover:shadow-lg hover:shadow-primary/30 transition-all">Get Started</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-20 pb-32 overflow-hidden">
+<div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[600px] hero-gradient-blob rounded-full"></div>
+<div class="max-w-7xl mx-auto px-6 text-center">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-8">
+<span class="material-symbols-outlined text-sm">bolt</span> New: AI Product Tagging
+            </div>
+<h1 class="text-5xl md:text-7xl font-black text-slate-900 leading-[1.1] tracking-tight max-w-4xl mx-auto mb-8">
+                Turn your Instagram into a <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-coral to-primary">shoppable wall</span> on Shopify.
+            </h1>
+<p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Sync your feed in seconds, tag products, and boost conversions with zero coding. The fastest way to social commerce.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
+<button class="w-full sm:w-auto px-8 py-4 bg-accent-coral text-white font-bold rounded-full text-lg hover:scale-105 active:scale-95 transition-all shadow-xl shadow-accent-coral/20">
+                    Connect Instagram
+                </button>
+<button class="w-full sm:w-auto px-8 py-4 border-2 border-accent-blue text-accent-blue font-bold rounded-full text-lg hover:bg-accent-blue/5 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">play_circle</span> View Demo
+                </button>
+</div>
+<!-- Mockup -->
+<div class="relative max-w-5xl mx-auto bg-white rounded-xl shadow-2xl border border-slate-200 p-2 overflow-hidden">
+<div class="bg-slate-50 rounded-lg p-4 md:p-8">
+<!-- Shopify Header Mock -->
+<div class="flex items-center justify-between mb-8 border-b border-slate-200 pb-4">
+<div class="h-6 w-32 bg-slate-300 rounded"></div>
+<div class="flex gap-4">
+<div class="h-4 w-12 bg-slate-200 rounded"></div>
+<div class="h-4 w-12 bg-slate-200 rounded"></div>
+</div>
+</div>
+<div class="text-left mb-8">
+<h3 class="text-2xl font-bold text-slate-800 mb-2">Shop Our Look</h3>
+<p class="text-slate-500">Tag us on Instagram @yourbrand to be featured</p>
+</div>
+<!-- Instagram Grid Mock -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square bg-slate-200 rounded-lg relative overflow-hidden group">
+<img alt="Fashion Outfit" class="w-full h-full object-cover" data-alt="Fashion model in stylish outfit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD151peh94Pm-ccnZigpJm0W_qIeqd2gCKPX2wLUlNJnQgeg4lJgbVxwk58IKmwZlAdxltS2AqOFfhyskRVCJMb5qoV4eXMZ56RxWWXF0GaGGLT4mSGxbIAKKpY6puwOJBEODxRyiYMcoCwVz_PPSf67Z5OHxMKDBwyeIlPokVKyeCQYTbBOPgDM8Ieb0F4i5ZvKA2ooZYXnWEtzKPB9GH9GKU-hD8rMcwTIAvuEAmCFnvpSZGUAMeET5PDNPs0SDvSV4K7mkSbOh4"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="shoppable-hotspot size-6 bg-white rounded-full border-4 border-primary/50 shadow-lg"></div>
+</div>
+</div>
+<div class="aspect-square bg-slate-200 rounded-lg relative overflow-hidden group">
+<img alt="Watch Product" class="w-full h-full object-cover" data-alt="Minimalist watch on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPxZrKe7xz3KInUUE-UyelMNiCE10DP68jlY_wSSbIh9jA9Jao-RzS2DQJueVoqxs_flcTMA-kbmRG5ZFQY1yi3g5W210o46_2DkHBgw5T-_35dT4fwXUGQZXWOY9qEe0P47tZ1uyWMGT6fgcH5LniyE7co_oIg_Ac9BsQ1GUkhY9yg0-limTeECIU9eh5NifxhuRfiMpKREROLcLz3yVHOIuR4z-uIoAH_NWtJOPF3YR-YmGcQE1oWL5NO-z8mct0yzUJ_o_wB8Q"/>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shoppable-hotspot size-6 bg-white rounded-full border-4 border-accent-coral/50 shadow-lg"></div>
+</div>
+<div class="aspect-square bg-slate-200 rounded-lg relative overflow-hidden group">
+<img alt="Sneakers" class="w-full h-full object-cover" data-alt="Modern high-top sneakers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaR2ISgjj5REsBVZKeAkilX-lzu8pD0XsghZUcTPvpLTZRpMBI4AB1dRq6v4WqPjlhWT6nor8uqE8AOaCaW7rn93e2pn3APu1u8kG3Tf8vQ2o3dDfrqUNqYYBeBNEa2ygGkVvFno_q98Po3F9qr3CvO9DGhIriV4vo0s9va5PpP9aRkQAoT19fWINEGCB7NJSbORoExt_TfjWKHGJu8vDPEeDXioHGkjddIDp8icUihBuque15eBEmf008yU-KI9Ud8JkZs8QrjaM"/>
+</div>
+<div class="aspect-square bg-slate-200 rounded-lg relative overflow-hidden group">
+<img alt="Running Shoes" class="w-full h-full object-cover" data-alt="Athletic shoes close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZpCFxkdH37aiE9ePvlbnydcEHSc_47o67_qDaQTcCvUKTv-OXX9hSOh__NJgi_gA1FEDqsKcHW1i2nkVQgBjc19e33lWR2F0e0ToYgBtx9ee9Mz1lRCsGIk0Y_djmkLPHOcgzuUD4C9jc9-DV9KK6grunNK_ta9o4iSdHY_b0vGdldMOkUr94mfNUG4KFFhxajYOYizmIjT-na0tw41P27CB4kWk8gN2FpnZhJOs8qLb8CBagUWZvoyTmms9E--BpBaBeQA0_AwU"/>
+<div class="absolute top-1/4 left-1/3 shoppable-hotspot size-6 bg-white rounded-full border-4 border-primary/50 shadow-lg"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Badges -->
+<section class="py-12 border-y border-slate-100 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<p class="text-center text-xs font-bold text-slate-400 uppercase tracking-widest mb-8">Trusted by 5,000+ Shopify Merchants</p>
+<div class="flex flex-wrap justify-center gap-12 md:gap-24 opacity-40 grayscale">
+<img alt="Brand Logo 1" class="h-8" data-alt="Generic minimalist brand logo mockup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD867Cu7asmS7wS_f5Q3igwV3-suP04jiBSxiXB6vubCNJfX_wUrsbgudNxGFNmhdKusqskkieNcbjknR9rFGwWOJx57g2V_-PBg9M03NPZJ56jOc4wmTBBFAf_8fsEIqe7QRbWZKTIZj4j7Hu6TsNvfYaLQzAb8i7VKsG6cPUK_Ukna6FJEuvHybx68Y5SGFuNJLfVY7fAt1hXDBUidhFBuAIKqLrbylqQAjmrDgvQYZPofKxWpYt4OrfExdLxyGYKMOfU8mAWuwA"/>
+<img alt="Brand Logo 2" class="h-8" data-alt="Generic minimalist brand logo mockup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPRWpyUhtMP4u3YNETCH_DGydE_vxGj6yW5Uv1qPc_4sGcAQum3bkHija9FieAjxVJf2WIn27lfHA18ThmzBjQK6Na6Y_xFba_ySjPCdNyPRylNHSHQ5oRbpN7tzfPEosECsngRHOayeLTUDx82eruOIvS0C0k-Ei4LQbtSMhDc0i7p149NJuV2HB45Z19iOsEq9zY0vR42UzcheuxFAQnWDJJihCsOTXhECIcHJseOil_BtU1a4_XtnfBoYSpTk7x4lcp6fj1rCs"/>
+<img alt="Brand Logo 3" class="h-8" data-alt="Generic minimalist brand logo mockup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmpI6DQIG9_I0j1KvcFmi7K3pXHkxy4FCBwMoRDi8QDYcESY_dLwOJzJS4Hqd_Mt7fa0IijBtaTjjGDkPCZDgfR_dzjouBUWavHUJa-GRLuh_NEsWcusE1gLaVmPibiPSBA1_seCel9viHcwF4pGLFuI-56jxtSZ7tHqGb_MrdPQRZKK1LD185XC6Uyg-IrPclQmOjXA5tiTuHbUeuPacy9b7SgMFpnmrpqex6Oo9OSO-D5B1K2pXPq5rGsKkaIYhNgaDg99eNJd4"/>
+<img alt="Brand Logo 4" class="h-8" data-alt="Generic minimalist brand logo mockup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfU0-ODnvFLUdT9KIgMt3lTgieiZyijXSceJVLGYhQ6mUlhwULY3_lbQqvpYiZwoKX9LM3Gfi8mFomSGrN4w_546OF4E7-w9Mh1w83JVFuvuhQyydmNHByE6hXctkL2MxdLlSohnDJQNG5e3BJkwBG-Ax4Ak61_BVyNdlXpIJg0l_gZ5yOPWEnkjm30NlFQtA6M8I-0-j-s23xee_XllZZFwu5XmmljWpG5rKpiEmJkoI0X73uSGEOW-zqx_mkMIU9gZlFyrFj7Ek"/>
+<img alt="Brand Logo 5" class="h-8" data-alt="Generic minimalist brand logo mockup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD07dzdU4dDkjnsoqmsUXjBX9VvI1qcKJGfPkklf-pu7YjdAfIrPlBdy7UgchN0sBJ6rzc1eFcuKMZmBiSPwZCY3SWT5f_1gqi8NctRCqQnuEBIZbZkYD33Kzui0Db0otj4u6C8hFyI1l-DTgiERM_OR8SdMLE8LZ4SDnUE4ssOWE46xN4AQ0aRLdSu9sLF3vkxvjr0FQsh3CzfpJwlQX0v5QFUaj6hdmR_t0kLVcC0LoGNdz4Y4ce3XujwYyv80_dFb2u9YOAk-Z8"/>
+</div>
+</div>
+</section>
+<!-- How it Works -->
+<section class="py-24 bg-white" id="how-it-works">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-black text-slate-900 mb-4">Go live in 3 simple steps</h2>
+<p class="text-slate-500 max-w-xl mx-auto">Skip the complex integration. We've made it effortless to start selling through your social feed.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="relative group">
+<div class="size-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center text-2xl font-black mb-6 group-hover:bg-primary group-hover:text-white transition-all">1</div>
+<h3 class="text-xl font-bold mb-3 text-slate-900">Connect Account</h3>
+<p class="text-slate-600 leading-relaxed">Securely link your Instagram Business account to Shopify with a single click.</p>
+</div>
+<div class="relative group">
+<div class="size-16 bg-accent-coral/10 text-accent-coral rounded-2xl flex items-center justify-center text-2xl font-black mb-6 group-hover:bg-accent-coral group-hover:text-white transition-all">2</div>
+<h3 class="text-xl font-bold mb-3 text-slate-900">Tag Products</h3>
+<p class="text-slate-600 leading-relaxed">Use our intuitive tagging tool to link products from your catalog directly to posts.</p>
+</div>
+<div class="relative group">
+<div class="size-16 bg-accent-blue/10 text-accent-blue rounded-2xl flex items-center justify-center text-2xl font-black mb-6 group-hover:bg-accent-blue group-hover:text-white transition-all">3</div>
+<h3 class="text-xl font-bold mb-3 text-slate-900">Go Live</h3>
+<p class="text-slate-600 leading-relaxed">Embed your shoppable wall anywhere on your site. No coding required.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Cards Section -->
+<section class="py-24 bg-soft-gray" id="features">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-black text-slate-900 mb-4">Everything you need to scale</h2>
+<p class="text-slate-500 max-w-xl mx-auto">Powerful tools designed specifically for modern e-commerce brands.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-slate-100">
+<span class="material-symbols-outlined text-accent-coral mb-4 text-4xl">sync</span>
+<h4 class="text-lg font-bold mb-2">Auto-Syncing</h4>
+<p class="text-slate-600 text-sm leading-relaxed">Your latest Instagram posts appear on your Shopify store automatically. No manual updates needed.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-slate-100">
+<span class="material-symbols-outlined text-primary mb-4 text-4xl">ads_click</span>
+<h4 class="text-lg font-bold mb-2">Shoppable Hotspots</h4>
+<p class="text-slate-600 text-sm leading-relaxed">Add interactive hotspots to your images so customers can buy without leaving the page.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-slate-100">
+<span class="material-symbols-outlined text-accent-blue mb-4 text-4xl">devices</span>
+<h4 class="text-lg font-bold mb-2">Mobile-First</h4>
+<p class="text-slate-600 text-sm leading-relaxed">Designed to look beautiful and function perfectly on any screen size or device.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-slate-100">
+<span class="material-symbols-outlined text-primary mb-4 text-4xl">monitoring</span>
+<h4 class="text-lg font-bold mb-2">Real-time Analytics</h4>
+<p class="text-slate-600 text-sm leading-relaxed">Track views, clicks, and conversions driven by your Instagram feed.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-slate-100">
+<span class="material-symbols-outlined text-accent-coral mb-4 text-4xl">palette</span>
+<h4 class="text-lg font-bold mb-2">Custom Styling</h4>
+<p class="text-slate-600 text-sm leading-relaxed">Match your brand perfectly with easy-to-use customization tools or custom CSS.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-slate-100">
+<span class="material-symbols-outlined text-accent-blue mb-4 text-4xl">support_agent</span>
+<h4 class="text-lg font-bold mb-2">24/7 Support</h4>
+<p class="text-slate-600 text-sm leading-relaxed">Our team of experts is here to help you set up and optimize your shoppable wall.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-white overflow-hidden" id="showcase">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-4xl font-black text-slate-900 mb-16 text-center">Loved by top brands</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="p-8 bg-slate-50 rounded-xl">
+<div class="flex gap-1 text-accent-coral mb-4">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-slate-700 italic mb-6">"Our conversion rate increased by 15% within the first week of using Wallify IG. It's so seamless!"</p>
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-slate-300" data-alt="Female CEO avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_V4k1GFCZvsdKWkmSUj5_zEkgdIObs5fntr5-YScVwxeZc7L_a0Z9VhRxF0-3HdrS1h4nc_g7Wxty5RFd4H1aKcZd8vsnQuEdZCeAnsh2G_Zyxax-ZbTXxfSXJkI2V-ZIZM0mn2eDaipsLoIVOYdOCJSIEG8G6dijnoEBqnx82HTM7uEUUYhdZYg4vNYPutk_Hkl7zIuw3zY8O7gXq0hjq4AK2EFgIctbXy4F5iyFYPcKTYF8yD8uz-FWA1h2XkmKC-V7xH-vO80');"></div>
+<div>
+<p class="font-bold text-slate-900">Sarah Jenkins</p>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-tighter">Founder, LuxeDecor</p>
+</div>
+</div>
+</div>
+<div class="p-8 bg-slate-50 rounded-xl">
+<div class="flex gap-1 text-accent-coral mb-4">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-slate-700 italic mb-6">"Setup took less than 2 minutes. The auto-sync feature is a lifesaver for our marketing team."</p>
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-slate-300" data-alt="Male Store Owner avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwRUMYx6XivWhSvJAW0a065Ix_5bdVQqQAQoKeD05izEQVycDIUA-F6PCh9H-OzpNNCZtj4MdLJg1MivmzumWDFttMRpq27EpebcIc9d-2F3eDzlLF7jf80jPFbHc550Qi-TSKy36UX5Lr67GsvYAe70er1iEdpwcoxP9Rh_w_XjCbmkT1FFtM9LEz6u01p3M8SF2yjE_omUx8_OFwIhgzoYwPSOU7XIrF0TOGms10glibGdlCwJLFSr-UsQiztaJ0kGJxu-MGlJ0');"></div>
+<div>
+<p class="font-bold text-slate-900">David Miller</p>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-tighter">E-commerce Manager, UrbanWear</p>
+</div>
+</div>
+</div>
+<div class="p-8 bg-slate-50 rounded-xl">
+<div class="flex gap-1 text-accent-coral mb-4">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-slate-700 italic mb-6">"Finally an Instagram app for Shopify that doesn't slow down our site speed. Highly recommended."</p>
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-slate-300" data-alt="Female Marketing Director avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbkg24QM1lvpH-dQT2tKIU0Z_UT_vhF6CQRt5xEk6xO2mZdhlBPYYokDvBTVlbzz-i1PoPznmymjPdJQSh0Ids1RSWpfMs9SzjjOU0KPZEkjiA6yL2LFUOHO0UFQ8w2CumhSfAx2XlCgknsrGFhOFCoaSv1SnHy252q4zuIuDevqewbStRFvhgL33Uzi2r4byxWwdD-kk1owEqKmwVTpDSCJZ8EaKNajRK2LaeXasOvUuCb30LOdrlMsNl-wrIGjVCNE1SRNTFfvk');"></div>
+<div>
+<p class="font-bold text-slate-900">Emma Watson</p>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-tighter">Marketing Director, GlowSkin</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 bg-white">
+<div class="max-w-5xl mx-auto px-6">
+<div class="bg-background-dark rounded-xl p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute inset-0 hero-gradient-blob opacity-20"></div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">Ready to transform your store into a social showroom?</h2>
+<p class="text-slate-300 text-lg mb-10 max-w-2xl mx-auto">Join thousands of brands driving sales through their social content. Start your 14-day free trial today.</p>
+<button class="px-10 py-5 bg-accent-coral text-white font-black rounded-full text-xl hover:scale-105 active:scale-95 transition-all cta-glow">
+                        Connect Instagram Now
+                    </button>
+<p class="text-slate-500 mt-6 text-sm">No credit card required • Instant setup</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-soft-gray pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-12 mb-20">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6 cursor-pointer" onclick="window.location.href='index.html'">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">grid_view</span>
+</div>
+<span class="text-lg font-bold tracking-tight text-slate-900">Wallify IG</span>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed mb-6">
+                        The ultimate social commerce tool for Shopify merchants. Turn followers into loyal customers.
+                    </p>
+<div class="flex gap-4">
+<a class="size-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="size-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+</div>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 mb-6">Product</h5>
+<ul class="space-y-4 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="index.html#features">Features</a></li>
+<li><a class="hover:text-primary transition-colors" href="index.html#showcase">Showcase</a></li>
+<li><a class="hover:text-primary transition-colors" href="pricing.html">Pricing</a></li>
+<li><a class="hover:text-primary transition-colors" href="docs.html">Resources</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 mb-6">Company</h5>
+<ul class="space-y-4 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="about.html">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="impressum.html">Privacy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 mb-6">Support</h5>
+<ul class="space-y-4 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="faq.html">Help Center</a></li>
+<li><a class="hover:text-primary transition-colors" href="mailto:support@wallifyig.com">Contact</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Security</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Status</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-200 pt-8 flex flex-col md:row items-center justify-between gap-4">
+<p class="text-xs text-slate-400">© 2024 Wallify IG Inc. All rights reserved.</p>
+<div class="flex gap-6">
+<img alt="Shopify Partner" class="h-5 opacity-50 grayscale" data-alt="Official Shopify Partner badge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt8JPd-KhD33YqChP79O6NvaD6AKCqjgNLdbnk72IkEujfrgzCu7IO5A-9M3guNhcO-BcIhxbmuweB6_bd8DlgdtQ2jZbqfyDf6mOOOtVXrsuGeKmCUGgxQBK7rvwgdd2JqYbbdFHs1c0BoWzYXg0IBtobxt7w80elBe4wBUVSDLfMvuC_DHckQnuSgHSXkYd2yY78jbqSito_aIWGxGmoPEYY2r1YaWCyOxJJJbKltcecO-n_QtzdFVvkN3czPblnf4tpnR8hb2k"/>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

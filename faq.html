@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FAQ - Wallify IG</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF2D7A",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121121",
+                        "accent-pink": "#fdf2f8",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .faq-accordion:hover {
+            background-color: #fdf2f8; /* accent-pink equivalent */
+        }
+    
+        .shoppable-wall-gradient {
+            background: linear-gradient(135deg, #FF6A3D, #FF2D7A, #A855F7, #4F46E5);
+        }
+        .shoppable-wall-border:focus-within {
+            border-color: transparent;
+            background-image: linear-gradient(white, white), linear-gradient(135deg, #FF6A3D, #FF2D7A, #A855F7, #4F46E5);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-10 py-4 bg-white dark:bg-slate-900 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Wallify IG</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="index.html#features">Features</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="pricing.html">Pricing</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">FAQ</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 items-center">
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span>Log In</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-slate-200" data-alt="User profile avatar circle" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvD8gUsArxUfxFL7PeXgWZUkBjo-dTGXgma8OIYxtvP30--mqTQSyx3XFfbkDnwjosGGGk80NnFYwIi97KDUwsf89XP69ldNInkja3aLVee9WGjMTeyH5sH8rHK6E8OUpbQvEHA0gw17QdF275W2C4CMSANVGrZM8ARi1f3IbZte2Keg5XkpGyXJbj3hwvRuBSkJO6vOfjqohs3Ndeg6MFxUINjvvC0TeQjpBlxhn812avfIelq-txrfCXIH8cjMLijIrDLPq8LVM");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-12 px-6">
+<div class="layout-content-container flex flex-col max-w-[800px] flex-1">
+<!-- Hero Section -->
+<div class="flex flex-col gap-4 text-center mb-12">
+<h1 class="text-slate-900 dark:text-white text-5xl font-black leading-tight tracking-tight">Help Center</h1>
+<p class="text-slate-500 dark:text-slate-400 text-lg max-w-xl mx-auto">Everything you need to know about Wallify IG. Can't find an answer? Our support team is here to help.</p>
+</div>
+<!-- Search -->
+<div class="mb-10">
+<label class="flex flex-col h-14 w-full shadow-sm rounded-full overflow-hidden">
+<div class="flex w-full flex-1 items-stretch rounded-full h-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus-within:border-primary transition-colors">
+<div class="text-slate-400 flex items-center justify-center pl-6">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-transparent focus:ring-0 h-full placeholder:text-slate-400 px-4 text-base font-normal leading-normal" placeholder="Search for questions (e.g. 'billing', 'sync frequency')"/>
+</div>
+</label>
+</div>
+<!-- Category Tabs -->
+<div class="flex gap-3 mb-12 overflow-x-auto pb-2 scrollbar-hide justify-center">
+<button class="flex h-11 shrink-0 items-center justify-center gap-x-2 rounded-full px-8 text-white font-semibold text-sm shadow-md shoppable-wall-gradient">
+                            All Topics
+                        </button>
+<button class="flex h-11 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-8 text-slate-700 dark:text-slate-200 font-semibold text-sm hover:border-primary transition-colors">
+                            Setup
+                        </button>
+<button class="flex h-11 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-8 text-slate-700 dark:text-slate-200 font-semibold text-sm hover:border-primary transition-colors">
+                            Sync
+                        </button>
+<button class="flex h-11 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-8 text-slate-700 dark:text-slate-200 font-semibold text-sm hover:border-primary transition-colors">
+                            Billing
+                        </button>
+</div>
+<!-- FAQ Sections -->
+<div class="space-y-12">
+<!-- Setup Category -->
+<section>
+<div class="flex items-center gap-3 mb-6 px-2">
+<span class="material-symbols-outlined text-primary">settings</span>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">Setup</h3>
+</div>
+<div class="space-y-3">
+<div class="faq-accordion bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 overflow-hidden transition-all duration-200 group">
+<button class="w-full text-left p-6 flex justify-between items-center gap-4">
+<span class="font-semibold text-slate-800 dark:text-slate-100">How do I connect my Instagram account?</span>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">expand_more</span>
+</button>
+</div>
+<div class="faq-accordion bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 overflow-hidden transition-all duration-200 group">
+<button class="w-full text-left p-6 flex justify-between items-center gap-4">
+<span class="font-semibold text-slate-800 dark:text-slate-100">Is Wallify IG compatible with Windows and Mac?</span>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">expand_more</span>
+</button>
+</div>
+<div class="faq-accordion bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 overflow-hidden transition-all duration-200 group">
+<button class="w-full text-left p-6 flex justify-between items-center gap-4">
+<span class="font-semibold text-slate-800 dark:text-slate-100">Can I use multiple accounts?</span>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">expand_more</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Sync Category -->
+<section>
+<div class="flex items-center gap-3 mb-6 px-2">
+<span class="material-symbols-outlined text-primary">sync</span>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">Sync</h3>
+</div>
+<div class="space-y-3">
+<div class="faq-accordion bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 overflow-hidden transition-all duration-200 group">
+<button class="w-full text-left p-6 flex justify-between items-center gap-4">
+<span class="font-semibold text-slate-800 dark:text-slate-100">How often do wallpapers sync?</span>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">expand_more</span>
+</button>
+</div>
+<div class="faq-accordion bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 overflow-hidden transition-all duration-200 group">
+<button class="w-full text-left p-6 flex justify-between items-center gap-4">
+<span class="font-semibold text-slate-800 dark:text-slate-100">Why are my images appearing blurry?</span>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">expand_more</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Billing Category -->
+<section>
+<div class="flex items-center gap-3 mb-6 px-2">
+<span class="material-symbols-outlined text-primary">payments</span>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">Billing</h3>
+</div>
+<div class="space-y-3">
+<div class="faq-accordion bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 overflow-hidden transition-all duration-200 group">
+<button class="w-full text-left p-6 flex justify-between items-center gap-4">
+<span class="font-semibold text-slate-800 dark:text-slate-100">How do I cancel my subscription?</span>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">expand_more</span>
+</button>
+</div>
+<div class="faq-accordion bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 overflow-hidden transition-all duration-200 group">
+<button class="w-full text-left p-6 flex justify-between items-center gap-4">
+<span class="font-semibold text-slate-800 dark:text-slate-100">What payment methods are accepted?</span>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">expand_more</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+<!-- Contact Support Card -->
+<div class="mt-20 p-10 rounded-xl text-white flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden shadow-xl shoppable-wall-gradient">
+<div class="relative z-10 flex flex-col gap-2 text-center md:text-left">
+<h4 class="text-2xl font-bold">Still have questions?</h4>
+<p class="text-primary/10 bg-white/20 px-3 py-1 rounded-full text-sm font-medium w-fit mx-auto md:mx-0">We respond in under 2 hours</p>
+<p class="text-white/80 mt-2 max-w-xs leading-relaxed">If you can't find what you're looking for, our friendly team is ready to assist you.</p>
+</div>
+<button class="relative z-10 bg-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all hover:scale-105 active:scale-95" style="color: #FF2D7A;">
+                            Contact Support
+                        </button>
+<!-- Decorative background element -->
+<div class="absolute -right-10 -bottom-10 size-40 bg-white/10 rounded-full blur-3xl"></div>
+<div class="absolute -left-10 -top-10 size-40 bg-white/5 rounded-full blur-2xl"></div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 px-10 py-12">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start gap-10">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-primary">
+<div class="size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold">Wallify IG</h2>
+</div>
+<p class="text-slate-500 text-sm max-w-xs">Connecting your world to your desktop, one post at a time.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<p class="font-bold text-slate-900 dark:text-white">Product</p>
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="index.html#features">Features</a>
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="pricing.html">Pricing</a>
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="#">API</a>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-bold text-slate-900 dark:text-white">Support</p>
+<a class="text-primary text-sm transition-colors font-semibold" href="faq.html">Help Center</a>
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="#">Status</a>
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="mailto:support@wallifyig.com">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-bold text-slate-900 dark:text-white">Legal</p>
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="impressum.html">Privacy</a>
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="#">Terms</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center text-slate-400 text-xs">
+<p>© 2024 Wallify IG Inc. All rights reserved.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">share</span>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
