@@ -13,11 +13,11 @@ This website embodies the **"Aura Luxe"** design philosophy: clean, sophisticate
 - **Micro-interactions**: Subtle animations and hover effects that enhance the premium feel.
 
 ## 📁 Pages & Structure
-- **Landing Page (`index.html`)**: The main gateway, featuring an interactive showcase and hero section.
-- **Features (`features.html`)**: A deep dive into what makes Wallify IG unique.
-- **Pricing (`pricing.html`)**: Clear tier-based options for growing brands.
-- **Documentation (`docs.html`)**: Step-by-step guidance with real application screenshots.
-- **Support (`support.html`)**: Direct help and contact options.
+- **Landing Page (`index`)**: The main gateway, featuring an interactive showcase and hero section.
+- **Features (`features`)**: A deep dive into what makes Wallify IG unique.
+- **Pricing (`pricing`)**: Clear tier-based options for growing brands.
+- **Documentation (`docs`)**: Step-by-step guidance with real application screenshots.
+- **Support (`support`)**: Direct help and contact options.
 
 ## 🎨 Design Theme: Aura Luxe
 The visual identity uses a refined palette:
