@@ -60,112 +60,113 @@
             </div>
 
             <!-- Pricing Grid -->
-            <div class="max-w-7xl mx-auto mt-24 grid md:grid-cols-3 gap-10">
+            <div class="max-w-5xl mx-auto mt-24 grid md:grid-cols-2 gap-8 items-start">
                 <!-- Free Plan -->
                 <div
-                    class="bg-[#f9fafb] p-10 rounded-3xl border border-[#e1e3e5] flex flex-col h-full hover:shadow-md transition-all">
-                    <div class="mb-10">
-                        <h3 class="text-lg font-black uppercase tracking-widest text-[#919eab] mb-4">Starter</h3>
+                    class="bg-white p-8 rounded-2xl border border-[#e1e3e5] flex flex-col h-full hover:shadow-md transition-all">
+                    <div class="mb-8">
+                        <h3 class="text-3xl font-black text-[#1a1c1d] mb-2">Free</h3>
+                        <p class="text-sm text-[#5c5f62] mb-6">Perfect for getting started</p>
                         <div class="flex items-baseline gap-1">
-                            <span class="text-5xl font-black">$0</span>
-                            <span class="text-[#5c5f62] font-bold text-sm">/mo</span>
+                            <span class="text-4xl font-black text-[#1a1c1d]">$0</span>
+                            <span class="text-[#5c5f62] font-bold text-sm">/month</span>
                         </div>
-                        <p class="mt-4 text-[#5c5f62] font-medium text-sm">Perfect to get started with Instagram feeds.
-                        </p>
                     </div>
-                    <ul class="space-y-4 mb-12 flex-grow">
-                        <li class="flex items-center gap-3 text-sm font-bold">
-                            <span class="material-symbols-outlined text-[#27c93f] text-xl">check_circle</span>
-                            Up to 5 Media Items
-                        </li>
-                        <li class="flex items-center gap-3 text-sm font-bold">
-                            <span class="material-symbols-outlined text-[#27c93f] text-xl">check_circle</span>
-                            Grid & Slider Layouts
-                        </li>
-                        <li class="flex items-center gap-3 text-sm font-bold">
-                            <span class="material-symbols-outlined text-[#27c93f] text-xl">check_circle</span>
-                            Standard Performance
-                        </li>
-                        <li class="flex items-center gap-3 text-sm font-bold text-[#919eab]/50 line-through">
-                            <span class="material-symbols-outlined text-xl opacity-20">cancel</span>
-                            Advanced Analytics
-                        </li>
-                    </ul>
+
                     <button
-                        class="w-full py-6 bg-white border border-[#e1e3e5] text-[#1a1c1d] font-black rounded-2xl hover:bg-[#f4f6f8] transition-all">Get
-                        Started</button>
+                        class="w-full py-3.5 bg-[#f4f6f8] text-[#919eab] font-bold text-sm rounded-xl mb-10 cursor-default">
+                        Current Plan
+                    </button>
+
+                    <div class="space-y-6">
+                        <p class="text-sm font-black text-[#1a1c1d]">Includes:</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-sm font-medium text-[#5c5f62]">
+                                <span class="size-1 rounded-full bg-[#1a1c1d]"></span>
+                                Basic Analytics
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-medium text-[#5c5f62]">
+                                <span class="size-1 rounded-full bg-[#1a1c1d]"></span>
+                                Daily Auto-Sync
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-medium text-[#5c5f62]">
+                                <span class="size-1 rounded-full bg-[#1a1c1d]"></span>
+                                Slider Layout Only
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-medium text-[#5c5f62]">
+                                <span class="size-1 rounded-full bg-[#1a1c1d]"></span>
+                                Max 12 Photos & Videos
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-medium text-[#5c5f62]">
+                                <span class="size-1 rounded-full bg-[#1a1c1d]"></span>
+                                Mobile Responsive
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-medium text-[#5c5f62]">
+                                <span class="size-1 rounded-full bg-[#1a1c1d]"></span>
+                                Basic Support
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <!-- Pro Plan -->
-                <div
-                    class="bg-[#1a1c1d] p-10 rounded-[2.5rem] border-4 border-primary relative flex flex-col h-full shadow-2xl scale-[1.05] z-10 text-white">
-                    <div
-                        class="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
-                        Most Popular</div>
-                    <div class="mb-10">
-                        <h3 class="text-lg font-black uppercase tracking-widest text-[#ff5a3d]/80 mb-4">Pro Plan</h3>
-                        <div class="flex items-baseline gap-1 text-white">
-                            <span class="text-6xl font-black">$14.99</span>
-                            <span class="text-[#919eab] font-bold text-sm">/mo</span>
-                        </div>
-                        <p class="mt-4 text-[#919eab] font-medium text-sm">For stores looking to maximize social
-                            conversion.</p>
+                <!-- Premium Plan -->
+                <div class="bg-white p-8 rounded-2xl border border-[#e1e3e5] flex flex-col h-full shadow-lg relative">
+                    <div class="absolute top-6 right-6">
+                        <span
+                            class="bg-[#dbf8ec] text-[#2c845d] text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider">Recommended</span>
                     </div>
-                    <ul class="space-y-4 mb-12 flex-grow">
-                        <li class="flex items-center gap-3 text-sm font-bold">
-                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            Unlimited Media Items
-                        </li>
-                        <li class="flex items-center gap-3 text-sm font-bold">
-                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            Shoppable Feed (Product Tagging)
-                        </li>
-                        <li class="flex items-center gap-3 text-sm font-bold">
-                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            Advanced Engagement Analytics
-                        </li>
-                        <li class="flex items-center gap-3 text-sm font-bold">
-                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            Priority 24/7 Support
-                        </li>
-                    </ul>
-                    <button
-                        class="w-full py-7 bg-primary text-white font-black rounded-2xl hover:scale-[1.02] transition-all shadow-xl shadow-primary/20">Try
-                        7-Day Free Trial</button>
-                </div>
+                    <div class="mb-8">
+                        <h3 class="text-3xl font-black text-[#1a1c1d] mb-2">Premium</h3>
+                        <p class="text-sm text-[#5c5f62] mb-6">For growing brands</p>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-4xl font-black text-[#1a1c1d]">$2.99</span>
+                            <span class="text-[#919eab] font-bold text-sm line-through">$5.00</span>
+                            <span class="text-[#5c5f62] font-bold text-sm">/month</span>
+                        </div>
+                    </div>
 
-                <!-- Plus Plan -->
-                <div
-                    class="bg-[#f9fafb] p-10 rounded-3xl border border-[#e1e3e5] flex flex-col h-full hover:shadow-md transition-all">
-                    <div class="mb-10">
-                        <h3 class="text-lg font-black uppercase tracking-widest text-[#919eab] mb-4">Plus Plan</h3>
-                        <div class="flex items-baseline gap-1">
-                            <span class="text-5xl font-black">$29.99</span>
-                            <span class="text-[#5c5f62] font-bold text-sm">/mo</span>
-                        </div>
-                        <p class="mt-4 text-[#5c5f62] font-medium text-sm">Advanced features for high-volume stores.</p>
-                    </div>
-                    <ul class="space-y-4 mb-12 flex-grow">
-                        <li class="flex items-center gap-3 text-sm font-bold">
-                            <span class="material-symbols-outlined text-[#27c93f] text-xl">check_circle</span>
-                            Everything in Pro
-                        </li>
-                        <li class="flex items-center gap-3 text-sm font-bold">
-                            <span class="material-symbols-outlined text-[#27c93f] text-xl">check_circle</span>
-                            Multilingual Support
-                        </li>
-                        <li class="flex items-center gap-3 text-sm font-bold">
-                            <span class="material-symbols-outlined text-[#27c93f] text-xl">check_circle</span>
-                            Custom CSS & Branding
-                        </li>
-                        <li class="flex items-center gap-3 text-sm font-bold">
-                            <span class="material-symbols-outlined text-[#27c93f] text-xl">check_circle</span>
-                            Dedicated Instance
-                        </li>
-                    </ul>
                     <button
-                        class="w-full py-6 bg-white border border-[#e1e3e5] text-[#1a1c1d] font-black rounded-2xl hover:bg-[#f4f6f8] transition-all">Select
-                        Plan</button>
+                        class="w-full py-4 bg-[#1a1c1d] text-white font-black text-sm rounded-xl mb-10 hover:bg-black transition-all shadow-lg active:scale-[0.98]">
+                        Upgrade to Premium
+                    </button>
+
+                    <div class="space-y-6">
+                        <p class="text-sm font-black text-[#1a1c1d]">Everything in Free, plus:</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-sm font-medium text-[#5c5f62]">
+                                <span class="size-1 rounded-full bg-[#1a1c1d]"></span>
+                                Advanced Analytics (Week-over-week insights)
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-medium text-[#5c5f62]">
+                                <span class="size-1 rounded-full bg-[#1a1c1d]"></span>
+                                Unlimited Photos & Videos
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-medium text-[#5c5f62]">
+                                <span class="size-1 rounded-full bg-[#1a1c1d]"></span>
+                                Slider & Grid Layouts
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-medium text-[#5c5f62]">
+                                <span class="size-1 rounded-full bg-[#1a1c1d]"></span>
+                                Pin & Hide Posts/Reels
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-medium text-[#5c5f62]">
+                                <span class="size-1 rounded-full bg-[#1a1c1d]"></span>
+                                Shoppable Posts (Tag Products)
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-medium text-[#5c5f62]">
+                                <span class="size-1 rounded-full bg-[#1a1c1d]"></span>
+                                Show Pinned Reels Only Filter
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-medium text-[#5c5f62]">
+                                <span class="size-1 rounded-full bg-[#1a1c1d]"></span>
+                                Real-time Sync
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-medium text-[#5c5f62]">
+                                <span class="size-1 rounded-full bg-[#1a1c1d]"></span>
+                                Priority Support
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -184,10 +185,10 @@
                                 </th>
                                 <th
                                     class="p-6 text-[10px] font-black uppercase tracking-widest text-center text-[#919eab]">
-                                    Starter</th>
+                                    Free</th>
                                 <th
-                                    class="p-6 text-[10px] font-black uppercase tracking-widest text-center text-primary">
-                                    Pro</th>
+                                    class="p-6 text-[10px] font-black uppercase tracking-widest text-center text-[#1a1c1d]">
+                                    Premium</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-[#e1e3e5]">

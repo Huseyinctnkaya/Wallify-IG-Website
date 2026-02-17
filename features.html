@@ -101,9 +101,80 @@
                 <div class="relative">
                     <div class="absolute inset-0 bg-primary/5 blur-[120px] rounded-full"></div>
                     <div
-                        class="relative bg-white p-2 rounded-[2.5rem] border border-[#e1e3e5] shadow-2xl overflow-hidden">
-                        <img class="rounded-[2rem] w-full" data-alt="Setup guide interface"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3PYRkIw8QjpizkTp2k57eHfVvIFuf2-aEMB8Nq265h1ivtWtg-jqPOaRoseZcT27-m4K7Q1cHl1yH61gp6lFguggLlH6jZIX844xU2mk5sZ1vPv4wxi5GuSu5A-vqA1SL_k_oGA_ObSTng3UkQj9LgqEvFcJBoshKKSoPGlKeMxP0WSvwdAPE9hdSvXdokaAelIgn0t5awEwC8cB-9V5fRn9OSHDNcVVE5FRIDZeOm7zqMSZ9ub-uOO5lxAhNyqcKCUEqaHF04OA" />
+                        class="relative bg-[#f6f6f7] rounded-[2.5rem] border border-[#e1e3e5] shadow-2xl overflow-hidden p-6 md:p-8 space-y-6">
+                        <!-- Setup Guide Card -->
+                        <div class="bg-white rounded-xl border border-[#e1e3e5] shadow-sm p-6 lg:p-8">
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <h4 class="text-sm font-black text-[#1a1c1d]">Setup Guide</h4>
+                                    <span
+                                        class="bg-[#f0f0f0] text-[#5c5f62] text-[10px] font-bold px-2 py-0.5 rounded-full">0/3
+                                        completed</span>
+                                </div>
+                                <span class="material-symbols-outlined text-[#1a1c1d] text-lg">expand_less</span>
+                            </div>
+                            <p class="text-xs text-[#5c5f62] mb-8">Follow these steps to set up your Instagram feed.</p>
+
+                            <!-- Steps -->
+                            <div class="space-y-8">
+                                <div class="flex gap-4">
+                                    <div
+                                        class="size-8 rounded-full border-2 border-dashed border-[#e1e3e5] flex items-center justify-center shrink-0">
+                                        <div class="size-4 rounded-full bg-[#f4f6f8]"></div>
+                                    </div>
+                                    <div class="space-y-4 flex-1">
+                                        <div>
+                                            <h5 class="text-sm font-bold text-[#1a1c1d]">Connect Instagram Account</h5>
+                                            <p class="text-[11px] text-[#5c5f62] mt-1">First, connect your professional
+                                                Instagram account.</p>
+                                        </div>
+                                        <button
+                                            class="bg-[#1a1c1d] text-white text-[11px] font-bold px-5 py-2 rounded-lg transition-all shadow-md">
+                                            Connect
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-4 opacity-50">
+                                    <div
+                                        class="size-8 rounded-full border-2 border-[#e1e3e5] flex items-center justify-center shrink-0">
+                                        <div class="size-4 rounded-full bg-[#f4f6f8]"></div>
+                                    </div>
+                                    <div class="space-y-1 flex-1">
+                                        <h5 class="text-sm font-bold text-[#1a1c1d]">Sync Social Media</h5>
+                                        <p class="text-[11px] text-[#5c5f62]">Once connected, we'll sync your latest
+                                            posts.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-4 opacity-50">
+                                    <div
+                                        class="size-8 rounded-full border-2 border-[#e1e3e5] flex items-center justify-center shrink-0">
+                                        <div class="size-4 rounded-full bg-[#f4f6f8]"></div>
+                                    </div>
+                                    <div class="space-y-1 flex-1">
+                                        <h5 class="text-sm font-bold text-[#1a1c1d]">Add Feed to Theme</h5>
+                                        <p class="text-[11px] text-[#5c5f62]">Place your feed anywhere using the Theme
+                                            Editor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Theme Editor Overlay Preview -->
+                        <div
+                            class="bg-white rounded-xl border border-[#e1e3e5] shadow-sm p-4 flex items-center gap-4 group">
+                            <div
+                                class="size-10 rounded-lg bg-[#f4f6f8] flex items-center justify-center text-[#5c5f62]">
+                                <span class="material-symbols-outlined text-xl">view_quilt</span>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-[11px] font-black text-[#1a1c1d]">Theme Block Ready</p>
+                                <p class="text-[10px] text-[#5c5f62]">Add from 'Apps' section in Theme Editor</p>
+                            </div>
+                            <span
+                                class="material-symbols-outlined text-[#ff5a3d] opacity-0 group-hover:opacity-100 transition-all text-lg">arrow_forward</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -114,10 +185,89 @@
             <div class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-20 items-center">
                 <div class="relative flex-1">
                     <div class="absolute inset-0 bg-[#1a1c1d]/5 blur-[120px] rounded-full"></div>
-                    <div
-                        class="relative bg-white p-2 rounded-[2.5rem] border border-[#e1e3e5] shadow-2xl overflow-hidden">
-                        <img class="rounded-[2rem] w-full" data-alt="Feed customization panel"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZUhae-Ttc39N6GYyTxwTGbbfpKC1tVVgIs-qHFD1HMrGpL_zPuQRLXa6WbDjtIeagox899h8lX21Lxiv7KMFn7Urh_XsrQqXvPDSWaeW6BskBpil5T9ki57AOnZNjd8run81t7YU39WUhibFpr_rYkFwWpgXRvhm25qBmmtZvJns4k9IgVfVvcIMxw6Me2o4n8qoVOj4VJpW_Gexw0jGKXyN0U5k_0-cJK6_3_9F7673uN7HapZC24TbfFTcy7ru8UAY7_iuAO94" />
+                    <div class="relative space-y-4">
+                        <!-- Top: Slider Preview -->
+                        <div
+                            class="bg-white p-6 rounded-[2rem] border border-[#e1e3e5] shadow-xl overflow-hidden group">
+                            <div class="flex items-center justify-between mb-4">
+                                <span
+                                    class="bg-[#f4f6f8] text-[#1a1c1d] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Slider
+                                    Layout</span>
+                                <div class="flex gap-1.5 font-black text-[#ff5a3d]">
+                                    <span class="material-symbols-outlined text-[18px]">chevron_left</span>
+                                    <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div
+                                    class="w-1/3 aspect-square bg-[#f4f6f8] rounded-xl border border-[#eeeeee] overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop"
+                                        class="w-full h-full object-cover" alt="Product 1">
+                                </div>
+                                <div
+                                    class="w-1/3 aspect-square bg-[#f4f6f8] rounded-xl border border-[#eeeeee] overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop"
+                                        class="w-full h-full object-cover" alt="Product 2">
+                                </div>
+                                <div
+                                    class="w-1/3 aspect-square bg-[#f4f6f8] rounded-xl border border-[#eeeeee] overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+                                        class="w-full h-full object-cover" alt="Product 3">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bottom: Grid Preview -->
+                        <div class="bg-white p-6 rounded-[2rem] border border-[#e1e3e5] shadow-xl overflow-hidden">
+                            <div class="flex items-center justify-between mb-4">
+                                <span
+                                    class="bg-[#f4f6f8] text-[#1a1c1d] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Grid
+                                    Layout</span>
+                                <span class="material-symbols-outlined text-[#5c5f62] text-[18px]">grid_view</span>
+                            </div>
+                            <div class="grid grid-cols-4 gap-3">
+                                <div
+                                    class="aspect-square bg-[#f4f6f8] rounded-lg border border-[#eeeeee] overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=200&h=200&fit=crop"
+                                        class="w-full h-full object-cover" alt="Grid 1">
+                                </div>
+                                <div
+                                    class="aspect-square bg-[#f4f6f8] rounded-lg border border-[#eeeeee] overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&h=200&fit=crop"
+                                        class="w-full h-full object-cover" alt="Grid 2">
+                                </div>
+                                <div
+                                    class="aspect-square bg-[#f4f6f8] rounded-lg border border-[#eeeeee] overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=200&h=200&fit=crop"
+                                        class="w-full h-full object-cover" alt="Grid 3">
+                                </div>
+                                <div
+                                    class="aspect-square bg-[#f4f6f8] rounded-lg border border-[#eeeeee] overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=200&h=200&fit=crop"
+                                        class="w-full h-full object-cover" alt="Grid 4">
+                                </div>
+                                <div
+                                    class="aspect-square bg-[#f4f6f8] rounded-lg border border-[#eeeeee] overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=200&h=200&fit=crop"
+                                        class="w-full h-full object-cover" alt="Grid 5">
+                                </div>
+                                <div
+                                    class="aspect-square bg-[#f4f6f8] rounded-lg border border-[#eeeeee] overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=200&h=200&fit=crop"
+                                        class="w-full h-full object-cover" alt="Grid 6">
+                                </div>
+                                <div
+                                    class="aspect-square bg-[#f4f6f8] rounded-lg border border-[#eeeeee] overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=200&h=200&fit=crop"
+                                        class="w-full h-full object-cover" alt="Grid 7">
+                                </div>
+                                <div
+                                    class="aspect-square bg-[#f4f6f8] rounded-lg border border-[#eeeeee] overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200&h=200&fit=crop"
+                                        class="w-full h-full object-cover" alt="Grid 8">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="flex-1 space-y-8">
