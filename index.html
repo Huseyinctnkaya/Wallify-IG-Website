@@ -335,32 +335,124 @@
                         </li>
                     </ul>
                 </div>
-                <div class="lg:order-1 relative p-8">
-                    <div class="absolute inset-0 bg-[#f4f6f8] rounded-3xl rotate-1"></div>
-                    <div class="relative bg-white rounded-2xl border border-[#e1e3e5] shadow-xl p-8 space-y-8">
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="p-4 bg-white border border-[#e1e3e5] rounded-xl shadow-sm">
-                                <p class="text-[10px] font-bold text-[#5c5f62] uppercase">Total Views</p>
-                                <p class="text-2xl font-black mt-1">12,482</p>
+                <div class="lg:order-1 relative p-4">
+                    <div class="absolute inset-0 bg-[#f4f6f8] rounded-[2.5rem] rotate-1"></div>
+                    <div
+                        class="relative bg-[#f6f6f7] rounded-[2rem] border border-[#e1e3e5] shadow-2xl overflow-hidden p-6 space-y-4">
+                        <!-- Dashboard Header -->
+                        <div class="flex items-center justify-between mb-2">
+                            <h5 class="text-xs font-black text-[#1a1c1d] uppercase tracking-wider">Analytics</h5>
+                        </div>
+
+                        <!-- Top Metric Cards -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <div class="p-4 bg-white border border-[#e1e3e5] rounded-xl shadow-sm space-y-1">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-[10px] font-bold text-[#5c5f62] uppercase">Total Views</p>
+                                    <span class="material-symbols-outlined text-[14px] text-[#5c5f62]">visibility</span>
+                                </div>
+                                <p class="text-xl font-black text-[#1a1c1d]">7</p>
                             </div>
-                            <div class="p-4 bg-[#ff5a3d] text-white rounded-xl shadow-lg shadow-[#ff5a3d]/20">
-                                <p class="text-[10px] font-bold uppercase opacity-80">Total Clicks</p>
-                                <p class="text-2xl font-black mt-1">1,245</p>
+                            <div class="p-4 bg-white border border-[#e1e3e5] rounded-xl shadow-sm space-y-1">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-[10px] font-bold text-[#5c5f62] uppercase">Total Clicks</p>
+                                    <span
+                                        class="material-symbols-outlined text-[14px] text-[#5c5f62]">arrow_right_alt</span>
+                                </div>
+                                <p class="text-xl font-black text-[#1a1c1d]">0</p>
+                            </div>
+                            <div class="p-4 bg-white border border-[#e1e3e5] rounded-xl shadow-sm space-y-1">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-[10px] font-bold text-[#5c5f62] uppercase">Click-through Rate</p>
+                                    <span class="material-symbols-outlined text-[14px] text-[#5c5f62]">monitoring</span>
+                                </div>
+                                <p class="text-xl font-black text-[#1a1c1d]">0.00%</p>
+                            </div>
+                            <div class="p-4 bg-white border border-[#e1e3e5] rounded-xl shadow-sm space-y-1">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-[10px] font-bold text-[#5c5f62] uppercase">Total Engagement</p>
+                                    <span class="material-symbols-outlined text-[14px] text-[#5c5f62]">bookmark</span>
+                                </div>
+                                <p class="text-xl font-black text-[#1a1c1d]">7</p>
                             </div>
                         </div>
-                        <div class="space-y-3">
-                            <div class="flex justify-between items-center">
-                                <h5 class="text-xs font-bold">Last 7 Days Activity</h5>
-                                <span class="text-[10px] font-bold text-[#27c93f]">Active now</span>
+
+                        <!-- Activity and Summary Grid -->
+                        <div class="grid md:grid-cols-[1fr,240px] gap-4">
+                            <!-- Bar Chart Card -->
+                            <div class="bg-white border border-[#e1e3e5] rounded-xl p-5 space-y-6">
+                                <div class="flex items-center justify-between">
+                                    <h6 class="text-xs font-black text-[#1a1c1d]">Last 7 Days Activity</h6>
+                                    <span
+                                        class="bg-[#dcf0ff] text-[#0060b9] text-[9px] font-black px-2 py-0.5 rounded-full">7
+                                        total interactions</span>
+                                </div>
+                                <div class="flex items-end gap-3 h-32 px-2">
+                                    <div class="flex-1 flex flex-col items-center gap-2">
+                                        <div class="w-full bg-[#dbe8e1] rounded-t-sm h-[15%]"></div>
+                                        <span class="text-[9px] font-bold text-[#5c5f62]">Thu</span>
+                                    </div>
+                                    <div class="flex-1 flex flex-col items-center gap-2">
+                                        <div class="w-full bg-[#dbe8e1] rounded-t-sm h-[15%]"></div>
+                                        <span class="text-[9px] font-bold text-[#5c5f62]">Fri</span>
+                                    </div>
+                                    <div class="flex-1 flex flex-col items-center gap-2">
+                                        <div class="w-full bg-[#dbe8e1] rounded-t-sm h-[15%]"></div>
+                                        <span class="text-[9px] font-bold text-[#5c5f62]">Sat</span>
+                                    </div>
+                                    <div class="flex-1 flex flex-col items-center gap-2">
+                                        <div class="w-full bg-[#dbe8e1] rounded-t-sm h-[15%]"></div>
+                                        <span class="text-[9px] font-bold text-[#5c5f62]">Sun</span>
+                                    </div>
+                                    <div class="flex-1 flex flex-col items-center gap-2">
+                                        <div class="w-full bg-[#dbe8e1] rounded-t-sm h-[15%]"></div>
+                                        <span class="text-[9px] font-bold text-[#5c5f62]">Mon</span>
+                                    </div>
+                                    <div class="flex-1 flex flex-col items-center gap-2">
+                                        <div class="w-full bg-[#dbe8e1] rounded-t-sm h-[15%]"></div>
+                                        <span class="text-[9px] font-bold text-[#5c5f62]">Tue</span>
+                                    </div>
+                                    <div class="flex-1 flex flex-col items-center gap-2 relative">
+                                        <span class="absolute -top-5 text-[10px] font-black">7</span>
+                                        <div class="w-full bg-[#2c845d] rounded-t-sm h-[85%]"></div>
+                                        <span class="text-[9px] font-black text-[#1a1c1d]">Wed</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 pt-2">
+                                    <div class="flex items-center gap-1.5">
+                                        <div class="size-2.5 rounded-sm bg-[#dbe8e1]"></div>
+                                        <span class="text-[10px] text-[#5c5f62] font-medium">Previous days</span>
+                                    </div>
+                                    <div class="flex items-center gap-1.5">
+                                        <div class="size-2.5 rounded-sm bg-[#2c845d]"></div>
+                                        <span class="text-[10px] text-[#5c5f62] font-medium">Today</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex items-end gap-2 h-24">
-                                <div class="flex-1 bg-[#f4f6f8] rounded-t w-full" style="height: 40%"></div>
-                                <div class="flex-1 bg-[#f4f6f8] rounded-t w-full" style="height: 60%"></div>
-                                <div class="flex-1 bg-[#f4f6f8] rounded-t w-full" style="height: 45%"></div>
-                                <div class="flex-1 bg-[#f4f6f8] rounded-t w-full" style="height: 80%"></div>
-                                <div class="flex-1 bg-[#ff5a3d] rounded-t w-full" style="height: 95%"></div>
-                                <div class="flex-1 bg-[#f4f6f8] rounded-t w-full" style="height: 70%"></div>
-                                <div class="flex-1 bg-[#f4f6f8] rounded-t w-full" style="height: 50%"></div>
+
+                            <!-- Weekly Summary Card -->
+                            <div class="bg-white border border-[#e1e3e5] rounded-xl p-5 space-y-6">
+                                <h6 class="text-xs font-black text-[#1a1c1d]">Weekly Summary</h6>
+                                <div class="space-y-5">
+                                    <div class="flex items-center justify-between">
+                                        <p class="text-[11px] text-[#5c5f62] font-medium">Best Day</p>
+                                        <span
+                                            class="bg-[#dbf8ec] text-[#2c845d] text-[10px] font-black px-2 py-0.5 rounded-md">Wed</span>
+                                    </div>
+                                    <p class="text-[11px] text-[#5c5f62] leading-tight">7 interactions on Wed</p>
+                                    <div class="h-px bg-[#f0f0f0]"></div>
+                                    <div class="flex items-center justify-between">
+                                        <p class="text-[11px] text-[#5c5f62] font-medium">Avg Daily Views</p>
+                                        <span class="text-[11px] font-black text-[#1a1c1d]">1</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <p class="text-[11px] text-[#5c5f62] font-medium">Avg Daily Clicks</p>
+                                        <span class="text-[11px] font-black text-[#1a1c1d]">0</span>
+                                    </div>
+                                    <div class="h-px bg-[#f0f0f0]"></div>
+                                    <p class="text-[10px] text-[#5c5f62] leading-relaxed italic">Your feed received 7
+                                        total interactions this week.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
