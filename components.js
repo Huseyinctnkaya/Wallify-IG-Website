@@ -22,21 +22,20 @@
 
   // Header
   const headerHTML = `
-<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-white/80 backdrop-blur-md">
-  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<header class="sticky top-0 z-50 w-full border-b border-[#f0f0f0] bg-white/90 backdrop-blur-lg">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
     <a href="index.html" class="flex items-center gap-2">
-      <div class="size-8 bg-primary rounded flex items-center justify-center text-white">
-        <span class="material-symbols-outlined text-xl">grid_view</span>
+      <div class="size-8 bg-black rounded-lg flex items-center justify-center text-white">
+        <span class="material-symbols-outlined text-lg fill-1">grid_view</span>
       </div>
-      <h2 class="text-[#181210] text-xl font-extrabold tracking-tight">Wallify IG</h2>
+      <h2 class="text-[#1a1c1d] text-lg font-bold tracking-tight">Wallify IG</h2>
     </a>
-    <nav class="hidden md:flex items-center gap-10">
+    <nav class="hidden md:flex items-center gap-8">
       ${buildNav()}
     </nav>
     <div class="flex items-center gap-4">
-      <button class="hidden sm:block text-sm font-bold px-4 py-2 hover:bg-primary/5 rounded-lg transition-colors">Login</button>
-      <button class="bg-primary hover:bg-primary/90 text-white text-sm font-bold px-6 py-2.5 rounded-lg transition-all shadow-lg shadow-primary/20">
-        Get Started
+      <button class="bg-black hover:bg-black/90 text-white text-sm font-bold px-5 py-2 rounded-lg transition-all shadow-sm">
+        Install App
       </button>
     </div>
   </div>
@@ -44,55 +43,55 @@
 
   // Footer
   const footerHTML = `
-<footer class="bg-white border-t border-[#e7dcda] py-16">
+<footer class="bg-[#fafafa] border-t border-[#f0f0f0] py-20">
   <div class="max-w-7xl mx-auto px-6">
-    <div class="grid md:grid-cols-4 gap-12 mb-16">
+    <div class="grid md:grid-cols-4 gap-12 mb-20">
       <div class="col-span-1 md:col-span-1 space-y-6">
         <a href="index.html" class="flex items-center gap-2">
-          <div class="size-6 bg-primary rounded flex items-center justify-center text-white">
-            <span class="material-symbols-outlined text-sm">grid_view</span>
+          <div class="size-6 bg-black rounded-md flex items-center justify-center text-white">
+            <span class="material-symbols-outlined text-xs">grid_view</span>
           </div>
-          <h2 class="text-[#181210] text-lg font-bold tracking-tight">Wallify IG</h2>
+          <h2 class="text-[#1a1c1d] text-base font-bold tracking-tight">Wallify IG</h2>
         </a>
-        <p class="text-sm text-[#8d655e] leading-relaxed">
-          The premium Instagram shoppable wall app for Shopify merchants who care about speed and conversion.
+        <p class="text-sm text-[#5c5f62] leading-relaxed max-w-xs">
+          The fastest Instagram feed app for Shopify. Built for high-volume stores that demand performance.
         </p>
         <div class="flex gap-4">
-          <span class="material-symbols-outlined text-[#8d655e] cursor-pointer hover:text-primary transition-colors">brand_awareness</span>
-          <span class="material-symbols-outlined text-[#8d655e] cursor-pointer hover:text-primary transition-colors">share</span>
-          <span class="material-symbols-outlined text-[#8d655e] cursor-pointer hover:text-primary transition-colors">public</span>
+          <span class="material-symbols-outlined text-[#5c5f62] cursor-pointer hover:text-black transition-colors">brand_awareness</span>
+          <span class="material-symbols-outlined text-[#5c5f62] cursor-pointer hover:text-black transition-colors">share</span>
+          <span class="material-symbols-outlined text-[#5c5f62] cursor-pointer hover:text-black transition-colors">public</span>
         </div>
       </div>
       <div>
-        <h4 class="font-bold mb-6">Product</h4>
-        <ul class="space-y-4 text-sm text-[#8d655e] font-medium">
-          <li><a class="hover:text-primary" href="features.html">Features</a></li>
-          <li><a class="hover:text-primary" href="pricing.html">Pricing</a></li>
-          <li><a class="hover:text-primary" href="docs.html">Documentation</a></li>
+        <h4 class="text-sm font-bold text-[#1a1c1d] mb-6 uppercase tracking-wider">Product</h4>
+        <ul class="space-y-4 text-sm text-[#5c5f62] font-medium">
+          <li><a class="hover:text-black" href="features.html">Features</a></li>
+          <li><a class="hover:text-black" href="pricing.html">Pricing</a></li>
+          <li><a class="hover:text-black" href="docs.html">Documentation</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="font-bold mb-6">Resources</h4>
-        <ul class="space-y-4 text-sm text-[#8d655e] font-medium">
-          <li><a class="hover:text-primary" href="blog.html">Blog</a></li>
-          <li><a class="hover:text-primary" href="support.html">Help Center</a></li>
-          <li><a class="hover:text-primary" href="docs.html">API Docs</a></li>
+        <h4 class="text-sm font-bold text-[#1a1c1d] mb-6 uppercase tracking-wider">Resources</h4>
+        <ul class="space-y-4 text-sm text-[#5c5f62] font-medium">
+          <li><a class="hover:text-black" href="blog.html">Case Studies</a></li>
+          <li><a class="hover:text-black" href="support.html">Help Center</a></li>
+          <li><a class="hover:text-black" href="docs.html">API Docs</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="font-bold mb-6">Legal</h4>
-        <ul class="space-y-4 text-sm text-[#8d655e] font-medium">
-          <li><a class="hover:text-primary" href="privacy.html">Privacy Policy</a></li>
-          <li><a class="hover:text-primary" href="impressum.html">Impressum</a></li>
-          <li><a class="hover:text-primary" href="support.html">Contact</a></li>
+        <h4 class="text-sm font-bold text-[#1a1c1d] mb-6 uppercase tracking-wider">Legal</h4>
+        <ul class="space-y-4 text-sm text-[#5c5f62] font-medium">
+          <li><a class="hover:text-black" href="privacy.html">Privacy Policy</a></li>
+          <li><a class="hover:text-black" href="impressum.html">Terms of Service</a></li>
+          <li><a class="hover:text-black" href="support.html">Contact Support</a></li>
         </ul>
       </div>
     </div>
-    <div class="pt-8 border-t border-[#f5f0f0] flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="text-xs font-bold text-[#8d655e] uppercase tracking-widest">&copy; 2025 Wallify IG. Built by merchants, for merchants.</p>
-      <div class="flex gap-8 text-xs font-bold text-[#8d655e] uppercase tracking-widest">
-        <a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
-        <a class="hover:text-primary transition-colors" href="impressum.html">Impressum</a>
+    <div class="pt-8 border-t border-[#f0f0f0] flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-xs font-medium text-[#5c5f62] tracking-wide">&copy; 2026 Wallify IG. All rights reserved.</p>
+      <div class="flex gap-8 text-xs font-medium text-[#5c5f62]">
+        <a class="hover:text-black transition-colors" href="privacy.html">Privacy</a>
+        <a class="hover:text-black transition-colors" href="impressum.html">Terms</a>
       </div>
     </div>
   </div>

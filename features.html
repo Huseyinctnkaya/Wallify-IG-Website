@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Wallify IG - Features</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Wallify IG | Features</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -19,191 +23,186 @@
                         "background-dark": "#23120f",
                     },
                     fontFamily: {
-                        "display": ["Inter"]
+                        "display": ["Inter", "sans-serif"]
                     },
-                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
                 },
             },
         }
     </script>
-<style>
-        body { font-family: 'Inter', sans-serif; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24 }
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-[#181210] dark:text-white transition-colors duration-300">
-<div id="site-header"></div>
-<main class="max-w-[1200px] mx-auto overflow-x-hidden">
-<!-- Hero Section -->
-<section class="px-6 py-16 md:py-24 text-center">
-<div class="max-w-3xl mx-auto space-y-6">
-<span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">Product Features</span>
-<h1 class="text-4xl md:text-6xl font-black text-[#181210] dark:text-white leading-[1.1] tracking-tight">
-                    Powerful features to grow your Shopify store.
-                </h1>
-<p class="text-lg text-[#8d655e] dark:text-white/60 max-w-2xl mx-auto">
-                    From real-time syncing to deep customization, Wallify IG provides everything you need to turn your Instagram feed into a sales machine.
+
+<body class="bg-white text-[#1a1c1d] selection:bg-primary selection:text-white">
+    <div id="site-header"></div>
+    <main>
+        <!-- Features Hero -->
+        <section class="pt-32 pb-20 px-6 bg-[#f9fafb]">
+            <div class="max-w-4xl mx-auto text-center space-y-8">
+                <h1 class="text-5xl md:text-7xl font-black tracking-tight leading-[1.05]">Built for <br /><span
+                        class="text-primary">Conversion.</span></h1>
+                <p class="text-xl text-[#5c5f62] max-w-2xl mx-auto font-medium leading-relaxed">
+                    Everything you need to turn your Instagram feed into a revenue machine. Designed for Shopify,
+                    optimized for sales.
                 </p>
-</div>
-</section>
-<!-- Feature 1: Auto Sync (Text Left, Image Right) -->
-<section class="px-6 py-12 md:py-20 flex flex-col md:flex-row items-center gap-12 lg:gap-24">
-<div class="flex-1 space-y-6">
-<div class="text-primary bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center">
-<span class="material-symbols-outlined">sync</span>
-</div>
-<h2 class="text-3xl md:text-4xl font-bold text-[#181210] dark:text-white tracking-tight">
-                    Auto Sync &amp; Real-time Updates
-                </h2>
-<p class="text-lg text-[#8d655e] dark:text-white/70 leading-relaxed">
-                    Set it and forget it. Our engine monitors your Instagram account 24/7. When you post on IG, it appears on your Shopify store instantly. No manual refreshing required.
-                </p>
-<ul class="space-y-3">
-<li class="flex items-center gap-3 text-[#181210] dark:text-white/80 font-medium">
-<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                        Instant webhook-based updates
-                    </li>
-<li class="flex items-center gap-3 text-[#181210] dark:text-white/80 font-medium">
-<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                        Background data fetching
-                    </li>
-</ul>
-</div>
-<div class="flex-1 w-full">
-<div class="rounded-xl overflow-hidden border border-[#e7dcda] dark:border-[#3a2a27] shadow-2xl shadow-primary/5">
-<img alt="Dashboard showing real-time sync progress" class="w-full h-auto" data-alt="Dashboard showing real-time sync progress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3PYRkIw8QjpizkTp2k57eHfVvIFuf2-aEMB8Nq265h1ivtWtg-jqPOaRoseZcT27-m4K7Q1cHl1yH61gp6lFguggLlH6jZIX844xU2mk5sZ1vPv4wxi5GuSu5A-vqA1SL_k_oGA_ObSTng3UkQj9LgqEvFcJBoshKKSoPGlKeMxP0WSvwdAPE9hdSvXdokaAelIgn0t5awEwC8cB-9V5fRn9OSHDNcVVE5FRIDZeOm7zqMSZ9ub-uOO5lxAhNyqcKCUEqaHF04OA"/>
-</div>
-</div>
-</section>
-<!-- Feature 2: Multiple Layouts (Text Right, Image Left) -->
-<section class="px-6 py-12 md:py-20 flex flex-col md:flex-row-reverse items-center gap-12 lg:gap-24 bg-white dark:bg-background-dark/40 rounded-[2rem]">
-<div class="flex-1 space-y-6">
-<div class="text-primary bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center">
-<span class="material-symbols-outlined">dashboard_customize</span>
-</div>
-<h2 class="text-3xl md:text-4xl font-bold text-[#181210] dark:text-white tracking-tight">
-                    Multiple Stunning Layouts
-                </h2>
-<p class="text-lg text-[#8d655e] dark:text-white/70 leading-relaxed">
-                    Choose the layout that best fits your brand's aesthetic. Whether it's a clean grid or a dynamic masonry wall, we've got you covered.
-                </p>
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
-<div class="p-4 rounded-lg bg-background-light dark:bg-white/5 border border-[#e7dcda] dark:border-white/10 text-center">
-<span class="material-symbols-outlined text-primary mb-2">grid_view</span>
-<p class="text-sm font-bold">Classic Grid</p>
-</div>
-<div class="p-4 rounded-lg bg-background-light dark:bg-white/5 border border-[#e7dcda] dark:border-white/10 text-center">
-<span class="material-symbols-outlined text-primary mb-2">view_carousel</span>
-<p class="text-sm font-bold">Carousel</p>
-</div>
-<div class="p-4 rounded-lg bg-background-light dark:bg-white/5 border border-[#e7dcda] dark:border-white/10 text-center">
-<span class="material-symbols-outlined text-primary mb-2">dashboard</span>
-<p class="text-sm font-bold">Masonry</p>
-</div>
-</div>
-</div>
-<div class="flex-1 w-full">
-<div class="rounded-xl overflow-hidden border border-[#e7dcda] dark:border-[#3a2a27] shadow-2xl shadow-primary/5">
-<img alt="Preview of different Instagram feed layouts" class="w-full h-auto" data-alt="Preview of different Instagram feed layouts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKhZArprbZzmNb7-2kw9TpFowT619lZjoJ5AtqFFOHvo9VFcJst_Oy9vZXwp-rAS-lCx-k3J18J1_2Dle5se7YTlex7n3K12ur8h271wx5lrWLg0VM5AtGXKa-ijOtzsRw8ylA8VaTEqH3QGzfIVMzCE9FDFdRf4qAOafQjGxjQMO4LGC4JknyFZ9A4dp9M8-wQN_aOzrHFREWiLmp87341U8vW2jUYyaNrpuIyQddD0IwYB_uAxzQNJBdPLTDW-Tq8u6VcidkjRs"/>
-</div>
-</div>
-</section>
-<!-- Feature 3: Performance (Full Width Highlight) -->
-<section class="px-6 py-12 md:py-24">
-<div class="bg-[#181210] dark:bg-black rounded-[2rem] p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-12 text-white">
-<div class="max-w-xl space-y-6">
-<h2 class="text-3xl md:text-4xl font-black tracking-tight">Built for Speed. Optimized for SEO.</h2>
-<p class="text-white/70 text-lg">
-                        We know site speed affects conversion. Wallify IG is built with high-performance code, ensuring your store remains lightning fast even with a 50-post feed.
+            </div>
+        </section>
+
+        <!-- Feature 1: Setup Guide -->
+        <section class="py-32 px-6">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+                <div class="space-y-8">
+                    <div
+                        class="size-14 rounded-2xl bg-[#ff5a3d]/10 flex items-center justify-center text-primary shadow-sm shadow-[#ff5a3d]/5">
+                        <span class="material-symbols-outlined text-3xl">task_alt</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-black tracking-tight">Setup in 2 Minutes. <br /> No Coding.
+                    </h2>
+                    <p class="text-lg text-[#5c5f62] leading-relaxed">
+                        Our integrated <strong>Setup Guide</strong> walks you through every step. From connecting your
+                        Instagram account to adding the feed block to your theme, it’s all visual and user-friendly.
                     </p>
-<div class="flex flex-wrap gap-8">
-<div>
-<p class="text-4xl font-black text-primary">99+</p>
-<p class="text-sm uppercase tracking-widest text-white/50 font-bold">Lighthouse Score</p>
-</div>
-<div>
-<p class="text-4xl font-black text-primary">&lt;100ms</p>
-<p class="text-sm uppercase tracking-widest text-white/50 font-bold">Load Time</p>
-</div>
-</div>
-</div>
-<div class="relative">
-<div class="w-48 h-48 md:w-64 md:h-64 rounded-full border-8 border-primary/20 flex items-center justify-center relative">
-<div class="absolute inset-0 rounded-full border-t-8 border-primary rotate-45"></div>
-<div class="text-center">
-<span class="text-5xl md:text-6xl font-black">99</span>
-<p class="text-xs font-bold text-white/50">PERFORMANCE</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Feature 4: No-Code Editor & Moderation (Side by Side) -->
-<section class="px-6 py-12 md:py-20 grid md:grid-cols-2 gap-8">
-<div class="p-8 md:p-12 rounded-[2rem] bg-white dark:bg-background-dark/40 border border-[#e7dcda] dark:border-[#3a2a27] space-y-6">
-<span class="material-symbols-outlined text-primary text-4xl">edit_note</span>
-<h3 class="text-2xl font-bold tracking-tight">Custom Styling Editor</h3>
-<p class="text-[#8d655e] dark:text-white/70 leading-relaxed">
-                    A powerful visual editor allows you to match your brand colors, adjust spacing, choose fonts, and style buttons without touching a single line of code.
-                </p>
-<div class="rounded-lg overflow-hidden border border-[#e7dcda] dark:border-white/10">
-<img alt="No-code visual editor interface" class="w-full" data-alt="No-code visual editor interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZUhae-Ttc39N6GYyTxwTGbbfpKC1tVVgIs-qHFD1HMrGpL_zPuQRLXa6WbDjtIeagox899h8lX21Lxiv7KMFn7Urh_XsrQqXvPDSWaeW6BskBpil5T9ki57AOnZNjd8run81t7YU39WUhibFpr_rYkFwWpgXRvhm25qBmmtZvJns4k9IgVfVvcIMxw6Me2o4n8qoVOj4VJpW_Gexw0jGKXyN0U5k_0-cJK6_3_9F7673uN7HapZC24TbfFTcy7ru8UAY7_iuAO94"/>
-</div>
-</div>
-<div class="p-8 md:p-12 rounded-[2rem] bg-white dark:bg-background-dark/40 border border-[#e7dcda] dark:border-[#3a2a27] space-y-6">
-<span class="material-symbols-outlined text-primary text-4xl">visibility_off</span>
-<h3 class="text-2xl font-bold tracking-tight">Powerful Moderation</h3>
-<p class="text-[#8d655e] dark:text-white/70 leading-relaxed">
-                    Curate your feed with precision. Easily hide specific posts, highlight your best content, or filter by hashtags to keep your store looking professional.
-                </p>
-<div class="rounded-lg overflow-hidden border border-[#e7dcda] dark:border-white/10">
-<img alt="Content moderation dashboard with hide-show toggles" class="w-full" data-alt="Content moderation dashboard with hide-show toggles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdLzaA2rIAuFxvFx10YZLgCChq2bYUIXz4CMAkBfF5pZhzJL-ly7RbVO77UHUHyX_393Qix8z5huZLvMos1AWJCfW2EdPVb2OgjcjKDVYNk9OnUoUx6m3SwvJtlftSZ5SkFMmwlEfDwIgee5VKRBV3EZxUhG3qPF01cAU-ey64C3lg-E66iTMmyW5pXwHkGziqekM9fUISwHoFn48lFGJw5J1AB_zIxmeovtU5Y159lOGem4uo6mEbTHmXQDRcGfkvNUoFmFwYsbo"/>
-</div>
-</div>
-</section>
-<!-- Feature 5: Compatibility -->
-<section class="px-6 py-12 md:py-20 border-t border-[#e7dcda] dark:border-[#3a2a27]">
-<div class="text-center space-y-4 mb-12">
-<h2 class="text-3xl font-bold tracking-tight">Built for Shopify 2.0</h2>
-<p class="text-[#8d655e] dark:text-white/60">Seamlessly integrates with all modern Shopify themes.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="flex gap-4">
-<div class="text-primary mt-1"><span class="material-symbols-outlined">bolt</span></div>
-<div>
-<h4 class="font-bold mb-1">Lazy Loading</h4>
-<p class="text-sm text-[#8d655e] dark:text-white/70">Images load as they enter the viewport, saving bandwidth and improving mobile scores.</p>
-</div>
-</div>
-<div class="flex gap-4">
-<div class="text-primary mt-1"><span class="material-symbols-outlined">shopping_bag</span></div>
-<div>
-<h4 class="font-bold mb-1">App Blocks Ready</h4>
-<p class="text-sm text-[#8d655e] dark:text-white/70">Drag and drop Wallify widgets anywhere in your theme editor using Shopify App Blocks.</p>
-</div>
-</div>
-<div class="flex gap-4">
-<div class="text-primary mt-1"><span class="material-symbols-outlined">devices</span></div>
-<div>
-<h4 class="font-bold mb-1">Mobile First</h4>
-<p class="text-sm text-[#8d655e] dark:text-white/70">Feeds are fully responsive and touch-optimized for the best mobile shopping experience.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA Section -->
-<section class="px-6 py-20">
-<div class="bg-primary rounded-[2rem] p-12 text-center text-white space-y-8">
-<h2 class="text-4xl md:text-5xl font-black tracking-tight">Ready to boost your social proof?</h2>
-<p class="text-white/90 text-lg max-w-xl mx-auto">Join 10,000+ Shopify merchants who use Wallify IG to increase their conversion rate.</p>
-<div class="flex flex-col sm:flex-row justify-center gap-4">
-<button class="bg-white text-primary text-lg font-bold px-8 py-4 rounded-xl hover:bg-background-light transition-all shadow-lg">Get Started Free</button>
-<button class="bg-primary border-2 border-white/30 text-white text-lg font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-all">Book a Demo</button>
-</div>
-<p class="text-sm text-white/70 italic">7-day free trial. No credit card required.</p>
-</div>
-</section>
-</main>
-<div id="site-footer"></div>
-<script src="components.js"></script>
-</body></html>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#f9fafb] border border-[#e1e3e5]">
+                            <div class="size-6 rounded-full bg-black flex items-center justify-center text-white mt-1">
+                                <span class="material-symbols-outlined text-xs">check</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm">One-Click Connection</h4>
+                                <p class="text-xs text-[#5c5f62] mt-1">Uses official Meta API for secure and stable
+                                    connectivity.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#f9fafb] border border-[#e1e3e5]">
+                            <div class="size-6 rounded-full bg-black flex items-center justify-center text-white mt-1">
+                                <span class="material-symbols-outlined text-xs">check</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm">Theme Block Ready</h4>
+                                <p class="text-xs text-[#5c5f62] mt-1">Just drag and drop in the Shopify Theme Editor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-primary/5 blur-[120px] rounded-full"></div>
+                    <div
+                        class="relative bg-white p-2 rounded-[2.5rem] border border-[#e1e3e5] shadow-2xl overflow-hidden">
+                        <img class="rounded-[2rem] w-full" data-alt="Setup guide interface"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3PYRkIw8QjpizkTp2k57eHfVvIFuf2-aEMB8Nq265h1ivtWtg-jqPOaRoseZcT27-m4K7Q1cHl1yH61gp6lFguggLlH6jZIX844xU2mk5sZ1vPv4wxi5GuSu5A-vqA1SL_k_oGA_ObSTng3UkQj9LgqEvFcJBoshKKSoPGlKeMxP0WSvwdAPE9hdSvXdokaAelIgn0t5awEwC8cB-9V5fRn9OSHDNcVVE5FRIDZeOm7zqMSZ9ub-uOO5lxAhNyqcKCUEqaHF04OA" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 2: Customization -->
+        <section class="py-32 px-6 bg-[#f9fafb]">
+            <div class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-20 items-center">
+                <div class="relative flex-1">
+                    <div class="absolute inset-0 bg-[#1a1c1d]/5 blur-[120px] rounded-full"></div>
+                    <div
+                        class="relative bg-white p-2 rounded-[2.5rem] border border-[#e1e3e5] shadow-2xl overflow-hidden">
+                        <img class="rounded-[2rem] w-full" data-alt="Feed customization panel"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZUhae-Ttc39N6GYyTxwTGbbfpKC1tVVgIs-qHFD1HMrGpL_zPuQRLXa6WbDjtIeagox899h8lX21Lxiv7KMFn7Urh_XsrQqXvPDSWaeW6BskBpil5T9ki57AOnZNjd8run81t7YU39WUhibFpr_rYkFwWpgXRvhm25qBmmtZvJns4k9IgVfVvcIMxw6Me2o4n8qoVOj4VJpW_Gexw0jGKXyN0U5k_0-cJK6_3_9F7673uN7HapZC24TbfFTcy7ru8UAY7_iuAO94" />
+                    </div>
+                </div>
+                <div class="flex-1 space-y-8">
+                    <div class="size-14 rounded-2xl bg-black flex items-center justify-center text-white shadow-lg">
+                        <span class="material-symbols-outlined text-3xl">brush</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-black tracking-tight">Match Your <br /> Brand Perfectly.</h2>
+                    <p class="text-lg text-[#5c5f62] leading-relaxed">
+                        Control every detail of your Instagram feed. Adjust spacing, choose between Grid or Slider
+                        layouts, and customize colors to make it look native to your store.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="p-6 rounded-2xl bg-white border border-[#e1e3e5]">
+                            <h4 class="font-bold text-sm mb-2">Grid & Masonry</h4>
+                            <p class="text-xs text-[#919eab]">Up to 12 columns responsive layout.</p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-white border border-[#e1e3e5]">
+                            <h4 class="font-bold text-sm mb-2">Slider Controls</h4>
+                            <p class="text-xs text-[#919eab]">Touch-optimized carousels for mobile.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 3: Analytics -->
+        <section class="py-32 px-6">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+                <div class="space-y-8">
+                    <div
+                        class="size-14 rounded-2xl bg-[#ff5a3d]/10 flex items-center justify-center text-primary shadow-sm">
+                        <span class="material-symbols-outlined text-3xl">monitoring</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-black tracking-tight">Know Exactly <br /> What's Working.</h2>
+                    <p class="text-lg text-[#5c5f62] leading-relaxed">
+                        Track every click and view in real-time. Our Analytics dashboard helps you understand how much
+                        revenue your Instagram feed is generating for your business.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4 text-sm font-bold">
+                            <span class="size-2 rounded-full bg-primary"></span>
+                            Live CTR Monitoring
+                        </li>
+                        <li class="flex items-center gap-4 text-sm font-bold">
+                            <span class="size-2 rounded-full bg-primary"></span>
+                            Post-level Performance Data
+                        </li>
+                        <li class="flex items-center gap-4 text-sm font-bold">
+                            <span class="size-2 rounded-full bg-primary"></span>
+                            Historical Trends & Reports
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-x-0 bottom-0 top-1/2 bg-[#ff5a3d]/5 blur-[120px] rounded-full"></div>
+                    <div
+                        class="relative bg-white p-2 rounded-[2.5rem] border border-[#e1e3e5] shadow-2xl overflow-hidden">
+                        <img class="rounded-[2rem] w-full" data-alt="Analytics dashboard showing engagement"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdLzaA2rIAuFxvFx10YZLgCChq2bYUIXz4CMAkBfF5pZhzJL-ly7RbVO77UHUHyX_393Qix8z5huZLvMos1AWJCfW2EdPVb2OgjcjKDVYNk9OnUoUx6m3SwvJtlftSZ5SkFMmwlEfDwIgee5VKRBV3EZxUhG3qPF01cAU-ey64C3lg-E66iTMmyW5pXwHkGziqekM9fUISwHoFn48lFGJw5J1AB_zIxmeovtU5Y159lOGem4uo6mEbTHmXQDRcGfkvNUoFmFwYsbo" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-24 bg-[#1a1c1d]">
+            <div class="max-w-5xl mx-auto px-6 text-center space-y-10">
+                <h2 class="text-5xl font-black text-white tracking-tight">Experience it for yourself.</h2>
+                <div class="flex justify-center gap-4">
+                    <button
+                        class="bg-primary text-white text-lg font-black px-12 py-5 rounded-2xl shadow-xl shadow-primary/20 hover:scale-[1.02] transition-all active:scale-[0.98]">
+                        Start Your Free Trial
+                    </button>
+                    <button
+                        class="bg-white/5 border border-white/20 text-white text-lg font-bold px-12 py-5 rounded-2xl hover:bg-white/10 transition-all">
+                        View Live Demo
+                    </button>
+                </div>
+                <p class="text-[10px] text-[#919eab] font-black uppercase tracking-widest">Setup takes under 2 minutes •
+                    No card required</p>
+            </div>
+        </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="components.js"></script>
+</body>
+
+</html>

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Wallify IG | Pricing</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Wallify IG | Pricing</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -31,280 +35,213 @@
             },
         }
     </script>
-<style>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-300">
-<div id="site-header"></div>
-<main>
-<!-- Hero Section & Toggle -->
-<section class="py-16 px-4">
-<div class="max-w-3xl mx-auto text-center">
-<h1 class="text-4xl md:text-5xl font-extrabold mb-6">Simple pricing for creators.</h1>
-<p class="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed">
-                    Choose the plan that's right for your workflow. From solo hobbyists to enterprise-scale production teams.
+
+<body class="bg-white text-[#1a1c1d] selection:bg-primary selection:text-white">
+    <div id="site-header"></div>
+    <main>
+        <!-- Pricing Hero Section -->
+        <section class="pt-24 pb-20 px-6">
+            <div class="max-w-4xl mx-auto text-center space-y-6">
+                <h1 class="text-5xl md:text-6xl font-black tracking-tight leading-[1.1]">Simple, transparent <br />
+                    pricing for Shopify.</h1>
+                <p class="text-xl text-[#5c5f62] max-w-2xl mx-auto font-medium">
+                    Start for free and scale as you grow. No hidden fees, no setup costs.
                 </p>
-<!-- Toggle -->
-<div class="flex items-center justify-center gap-4 mb-12">
-<span class="text-sm font-medium">Monthly</span>
-<button class="w-14 h-7 bg-primary/20 dark:bg-primary/10 rounded-full relative p-1 focus:outline-none">
-<div class="w-5 h-5 bg-primary rounded-full translate-x-7"></div>
-</button>
-<span class="text-sm font-medium">Yearly</span>
-<span class="bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">Save 20%</span>
-</div>
-</div>
-<!-- Pricing Cards -->
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-<!-- Basic -->
-<div class="bg-white dark:bg-zinc-900 p-8 rounded-xl border border-slate-200 dark:border-zinc-800 flex flex-col h-full hover:shadow-xl transition-shadow">
-<div class="mb-8">
-<h3 class="text-lg font-bold mb-2">Basic</h3>
-<p class="text-slate-500 dark:text-slate-400 text-sm mb-6">For personal passion projects.</p>
-<div class="flex items-baseline gap-1">
-<span class="text-4xl font-bold">$0</span>
-<span class="text-slate-500 text-sm">/mo</span>
-</div>
-</div>
-<ul class="space-y-4 mb-10 flex-grow">
-<li class="flex items-center gap-3 text-sm">
-<span class="material-icons text-primary text-lg">check_circle</span>
-                            5 Instagram Accounts
+            </div>
+
+            <!-- Pricing Grid -->
+            <div class="max-w-7xl mx-auto mt-24 grid md:grid-cols-3 gap-10">
+                <!-- Free Plan -->
+                <div
+                    class="bg-[#f9fafb] p-10 rounded-3xl border border-[#e1e3e5] flex flex-col h-full hover:shadow-md transition-all">
+                    <div class="mb-10">
+                        <h3 class="text-lg font-black uppercase tracking-widest text-[#919eab] mb-4">Starter</h3>
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-5xl font-black">$0</span>
+                            <span class="text-[#5c5f62] font-bold text-sm">/mo</span>
+                        </div>
+                        <p class="mt-4 text-[#5c5f62] font-medium text-sm">Perfect to get started with Instagram feeds.
+                        </p>
+                    </div>
+                    <ul class="space-y-4 mb-12 flex-grow">
+                        <li class="flex items-center gap-3 text-sm font-bold">
+                            <span class="material-symbols-outlined text-[#27c93f] text-xl">check_circle</span>
+                            Up to 5 Media Items
                         </li>
-<li class="flex items-center gap-3 text-sm">
-<span class="material-icons text-primary text-lg">check_circle</span>
-                            Standard Resolution
+                        <li class="flex items-center gap-3 text-sm font-bold">
+                            <span class="material-symbols-outlined text-[#27c93f] text-xl">check_circle</span>
+                            Grid & Slider Layouts
                         </li>
-<li class="flex items-center gap-3 text-sm">
-<span class="material-icons text-primary text-lg">check_circle</span>
-                            Community Support
+                        <li class="flex items-center gap-3 text-sm font-bold">
+                            <span class="material-symbols-outlined text-[#27c93f] text-xl">check_circle</span>
+                            Standard Performance
                         </li>
-</ul>
-<button class="w-full py-3 border border-primary text-primary font-bold rounded-lg hover:bg-primary/5 transition-colors">Start Free</button>
-</div>
-<!-- Pro -->
-<div class="bg-white dark:bg-zinc-900 p-8 rounded-xl border-2 border-primary relative flex flex-col h-full shadow-lg shadow-primary/5 transform md:-translate-y-4">
-<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Most Popular</div>
-<div class="mb-8">
-<h3 class="text-lg font-bold mb-2">Pro</h3>
-<p class="text-slate-500 dark:text-slate-400 text-sm mb-6">For professional creators.</p>
-<div class="flex items-baseline gap-1">
-<span class="text-4xl font-bold">$19</span>
-<span class="text-slate-500 text-sm">/mo</span>
-</div>
-</div>
-<ul class="space-y-4 mb-10 flex-grow">
-<li class="flex items-center gap-3 text-sm font-medium">
-<span class="material-icons text-primary text-lg">check_circle</span>
-                            Unlimited Accounts
-                        </li>
-<li class="flex items-center gap-3 text-sm font-medium">
-<span class="material-icons text-primary text-lg">check_circle</span>
-                            4K High Resolution
-                        </li>
-<li class="flex items-center gap-3 text-sm font-medium">
-<span class="material-icons text-primary text-lg">check_circle</span>
+                        <li class="flex items-center gap-3 text-sm font-bold text-[#919eab]/50 line-through">
+                            <span class="material-symbols-outlined text-xl opacity-20">cancel</span>
                             Advanced Analytics
                         </li>
-<li class="flex items-center gap-3 text-sm font-medium">
-<span class="material-icons text-primary text-lg">check_circle</span>
-                            Priority Email Support
-                        </li>
-</ul>
-<button class="w-full py-3 bg-primary text-white font-bold rounded-lg hover:brightness-110 transition-all shadow-md">Go Pro</button>
-</div>
-<!-- Enterprise -->
-<div class="bg-white dark:bg-zinc-900 p-8 rounded-xl border border-slate-200 dark:border-zinc-800 flex flex-col h-full hover:shadow-xl transition-shadow">
-<div class="mb-8">
-<h3 class="text-lg font-bold mb-2">Enterprise</h3>
-<p class="text-slate-500 dark:text-slate-400 text-sm mb-6">For large teams and agencies.</p>
-<div class="flex items-baseline gap-1">
-<span class="text-4xl font-bold">Custom</span>
-</div>
-</div>
-<ul class="space-y-4 mb-10 flex-grow">
-<li class="flex items-center gap-3 text-sm">
-<span class="material-icons text-primary text-lg">check_circle</span>
-                            Custom API Access
-                        </li>
-<li class="flex items-center gap-3 text-sm">
-<span class="material-icons text-primary text-lg">check_circle</span>
-                            Bulk Asset Management
-                        </li>
-<li class="flex items-center gap-3 text-sm">
-<span class="material-icons text-primary text-lg">check_circle</span>
-                            Dedicated Manager
-                        </li>
-<li class="flex items-center gap-3 text-sm">
-<span class="material-icons text-primary text-lg">check_circle</span>
-                            SSO &amp; Security Audit
-                        </li>
-</ul>
-<button class="w-full py-3 border border-slate-900 dark:border-slate-100 font-bold rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-800 transition-colors">Contact Sales</button>
-</div>
-</div>
-</section>
-<!-- Feature Comparison -->
-<section class="py-24 bg-white dark:bg-zinc-950/30">
-<div class="max-w-5xl mx-auto px-4">
-<h2 class="text-3xl font-bold text-center mb-16">Compare all features</h2>
-<div class="overflow-x-auto">
-<table class="w-full text-left border-collapse">
-<thead>
-<tr class="border-b border-slate-200 dark:border-zinc-800">
-<th class="py-6 px-4 text-sm font-semibold w-1/4">Features</th>
-<th class="py-6 px-4 text-sm font-semibold text-center">Basic</th>
-<th class="py-6 px-4 text-sm font-semibold text-center text-primary">Pro</th>
-<th class="py-6 px-4 text-sm font-semibold text-center">Enterprise</th>
-</tr>
-</thead>
-<tbody>
-<!-- Category Header -->
-<tr class="bg-slate-50/50 dark:bg-zinc-900/50">
-<td class="py-3 px-4 text-[10px] font-bold uppercase tracking-widest text-slate-400" colspan="4">Core Capabilities</td>
-</tr>
-<tr class="border-b border-slate-100 dark:border-zinc-800">
-<td class="py-5 px-4 text-sm">Monthly Exports</td>
-<td class="py-5 px-4 text-sm text-center">10</td>
-<td class="py-5 px-4 text-sm text-center font-medium">Unlimited</td>
-<td class="py-5 px-4 text-sm text-center">Unlimited</td>
-</tr>
-<tr class="border-b border-slate-100 dark:border-zinc-800">
-<td class="py-5 px-4 text-sm">Resolution</td>
-<td class="py-5 px-4 text-sm text-center">1080p</td>
-<td class="py-5 px-4 text-sm text-center font-medium">4K / HDR</td>
-<td class="py-5 px-4 text-sm text-center">Custom</td>
-</tr>
-<tr class="border-b border-slate-100 dark:border-zinc-800">
-<td class="py-5 px-4 text-sm">AI Enhancement</td>
-<td class="py-5 px-4 text-sm text-center text-slate-300">—</td>
-<td class="py-5 px-4 text-sm text-center"><span class="material-icons text-primary">check</span></td>
-<td class="py-5 px-4 text-sm text-center"><span class="material-icons text-primary">check</span></td>
-</tr>
-<!-- Category Header -->
-<tr class="bg-slate-50/50 dark:bg-zinc-900/50">
-<td class="py-3 px-4 text-[10px] font-bold uppercase tracking-widest text-slate-400" colspan="4">Team &amp; Support</td>
-</tr>
-<tr class="border-b border-slate-100 dark:border-zinc-800">
-<td class="py-5 px-4 text-sm">Team Seats</td>
-<td class="py-5 px-4 text-sm text-center">1</td>
-<td class="py-5 px-4 text-sm text-center font-medium">1</td>
-<td class="py-5 px-4 text-sm text-center">Unlimited</td>
-</tr>
-<tr class="border-b border-slate-100 dark:border-zinc-800">
-<td class="py-5 px-4 text-sm">Support response</td>
-<td class="py-5 px-4 text-sm text-center">48h</td>
-<td class="py-5 px-4 text-sm text-center font-medium">12h</td>
-<td class="py-5 px-4 text-sm text-center">Instant</td>
-</tr>
-<tr class="border-b border-slate-100 dark:border-zinc-800">
-<td class="py-5 px-4 text-sm">Custom API Access</td>
-<td class="py-5 px-4 text-sm text-center text-slate-300">—</td>
-<td class="py-5 px-4 text-sm text-center text-slate-300">—</td>
-<td class="py-5 px-4 text-sm text-center"><span class="material-icons text-primary">check</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
-<!-- FAQ Section -->
-<section class="py-24 px-4 bg-background-light dark:bg-background-dark">
-<div class="max-w-3xl mx-auto">
-<h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-<div class="space-y-4">
-<div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-lg overflow-hidden">
-<button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none group">
-<span class="font-semibold">Can I upgrade or downgrade my plan later?</span>
-<span class="material-icons text-slate-400 group-hover:text-primary transition-transform duration-300">expand_more</span>
-</button>
-<div class="faq-answer grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
-<div class="overflow-hidden">
-<div class="px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
-                            Yes, you can change your plan at any time. If you upgrade, the change is immediate. If you downgrade, it will take effect at the end of your current billing cycle.
-</div>
-</div>
-</div>
-</div>
-<div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-lg overflow-hidden">
-<button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none group">
-<span class="font-semibold">Is there a free trial for the Pro plan?</span>
-<span class="material-icons text-slate-400 group-hover:text-primary transition-transform duration-300">expand_more</span>
-</button>
-<div class="faq-answer grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
-<div class="overflow-hidden">
-<div class="px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
-                            We offer a 14-day free trial for new Pro subscribers. No credit card is required to start testing the premium features.
-</div>
-</div>
-</div>
-</div>
-<div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-lg overflow-hidden">
-<button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none group">
-<span class="font-semibold">What payment methods do you accept?</span>
-<span class="material-icons text-slate-400 group-hover:text-primary transition-transform duration-300">expand_more</span>
-</button>
-<div class="faq-answer grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
-<div class="overflow-hidden">
-<div class="px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
-                            We accept all major credit cards, PayPal, and Apple Pay. For Enterprise plans, we also support bank transfers and invoicing.
-</div>
-</div>
-</div>
-</div>
-<div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-lg overflow-hidden">
-<button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none group">
-<span class="font-semibold">Do you offer discounts for non-profits?</span>
-<span class="material-icons text-slate-400 group-hover:text-primary transition-transform duration-300">expand_more</span>
-</button>
-<div class="faq-answer grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
-<div class="overflow-hidden">
-<div class="px-6 pb-6 text-sm text-slate-500 dark:text-slate-400">
-                            Yes! Registered 501(c)(3) organizations are eligible for a 50% discount on all Pro monthly and yearly plans. Contact our support team to apply.
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA Section -->
-<section class="py-20 px-4">
-<div class="max-w-5xl mx-auto bg-primary rounded-2xl p-12 text-center text-white relative overflow-hidden">
-<!-- Abstract Pattern Decoration -->
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-<div class="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
-<h2 class="text-3xl font-bold mb-6 relative z-10">Ready to transform your Instagram feed?</h2>
-<p class="text-white/80 mb-10 text-lg relative z-10">Join over 10,000 creators using Wallify IG to scale their content.</p>
-<div class="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
-<button class="bg-white text-primary font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-all shadow-lg">Start for free</button>
-<button class="bg-transparent border border-white/30 text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-all">Schedule Demo</button>
-</div>
-</div>
-</section>
-</main>
-<div id="site-footer"></div>
-<script src="components.js"></script>
-<script>
-document.querySelectorAll('.faq-toggle').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const answer = btn.nextElementSibling;
-    const icon = btn.querySelector('.material-icons');
-    const isOpen = answer.classList.contains('grid-rows-[1fr]');
+                    </ul>
+                    <button
+                        class="w-full py-4.5 bg-white border border-[#e1e3e5] text-[#1a1c1d] font-black rounded-2xl hover:bg-[#f4f6f8] transition-all">Get
+                        Started</button>
+                </div>
 
-    // Close all
-    document.querySelectorAll('.faq-answer').forEach(a => a.classList.replace('grid-rows-[1fr]', 'grid-rows-[0fr]'));
-    document.querySelectorAll('.faq-toggle .material-icons').forEach(i => i.classList.remove('rotate-180'));
+                <!-- Pro Plan -->
+                <div
+                    class="bg-[#1a1c1d] p-10 rounded-[2.5rem] border-4 border-primary relative flex flex-col h-full shadow-2xl scale-[1.05] z-10 text-white">
+                    <div
+                        class="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
+                        Most Popular</div>
+                    <div class="mb-10">
+                        <h3 class="text-lg font-black uppercase tracking-widest text-[#ff5a3d]/80 mb-4">Pro Plan</h3>
+                        <div class="flex items-baseline gap-1 text-white">
+                            <span class="text-6xl font-black">$14.99</span>
+                            <span class="text-[#919eab] font-bold text-sm">/mo</span>
+                        </div>
+                        <p class="mt-4 text-[#919eab] font-medium text-sm">For stores looking to maximize social
+                            conversion.</p>
+                    </div>
+                    <ul class="space-y-4 mb-12 flex-grow">
+                        <li class="flex items-center gap-3 text-sm font-bold">
+                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                            Unlimited Media Items
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-bold">
+                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                            Shoppable Feed (Product Tagging)
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-bold">
+                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                            Advanced Engagement Analytics
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-bold">
+                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                            Priority 24/7 Support
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full py-5 bg-primary text-white font-black rounded-2xl hover:scale-[1.02] transition-all shadow-xl shadow-primary/20">Try
+                        7-Day Free Trial</button>
+                </div>
 
-    // Open clicked if it was closed
-    if (!isOpen) {
-      answer.classList.replace('grid-rows-[0fr]', 'grid-rows-[1fr]');
-      icon.classList.add('rotate-180');
-    }
-  });
-});
-</script>
-</body></html>
+                <!-- Plus Plan -->
+                <div
+                    class="bg-[#f9fafb] p-10 rounded-3xl border border-[#e1e3e5] flex flex-col h-full hover:shadow-md transition-all">
+                    <div class="mb-10">
+                        <h3 class="text-lg font-black uppercase tracking-widest text-[#919eab] mb-4">Plus Plan</h3>
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-5xl font-black">$29.99</span>
+                            <span class="text-[#5c5f62] font-bold text-sm">/mo</span>
+                        </div>
+                        <p class="mt-4 text-[#5c5f62] font-medium text-sm">Advanced features for high-volume stores.</p>
+                    </div>
+                    <ul class="space-y-4 mb-12 flex-grow">
+                        <li class="flex items-center gap-3 text-sm font-bold">
+                            <span class="material-symbols-outlined text-[#27c93f] text-xl">check_circle</span>
+                            Everything in Pro
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-bold">
+                            <span class="material-symbols-outlined text-[#27c93f] text-xl">check_circle</span>
+                            Multilingual Support
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-bold">
+                            <span class="material-symbols-outlined text-[#27c93f] text-xl">check_circle</span>
+                            Custom CSS & Branding
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-bold">
+                            <span class="material-symbols-outlined text-[#27c93f] text-xl">check_circle</span>
+                            Dedicated Instance
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full py-4.5 bg-white border border-[#e1e3e5] text-[#1a1c1d] font-black rounded-2xl hover:bg-[#f4f6f8] transition-all">Select
+                        Plan</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Comparison (Mini) -->
+        <section class="py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-black tracking-tight">Compare Features</h2>
+                </div>
+                <div class="border border-[#e1e3e5] rounded-3xl overflow-hidden">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-[#f9fafb] border-b border-[#e1e3e5]">
+                                <th class="p-6 text-[10px] font-black uppercase tracking-widest text-[#919eab]">Feature
+                                </th>
+                                <th
+                                    class="p-6 text-[10px] font-black uppercase tracking-widest text-center text-[#919eab]">
+                                    Starter</th>
+                                <th
+                                    class="p-6 text-[10px] font-black uppercase tracking-widest text-center text-primary">
+                                    Pro</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-[#e1e3e5]">
+                            <tr>
+                                <td class="p-6 text-sm font-bold">Custom Layouts</td>
+                                <td class="p-6 text-center"><span
+                                        class="material-symbols-outlined text-[#27c93f]">check</span></td>
+                                <td class="p-6 text-center"><span
+                                        class="material-symbols-outlined text-[#27c93f]">check</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-6 text-sm font-bold">Ad-free Feed</td>
+                                <td class="p-6 text-center"><span
+                                        class="material-symbols-outlined text-[#ff5a3d] opacity-20 font-light">close</span>
+                                </td>
+                                <td class="p-6 text-center"><span
+                                        class="material-symbols-outlined text-[#27c93f]">check</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-6 text-sm font-bold">Product Tagging</td>
+                                <td class="p-6 text-center"><span
+                                        class="material-symbols-outlined text-[#ff5a3d] opacity-20 font-light">close</span>
+                                </td>
+                                <td class="p-6 text-center"><span
+                                        class="material-symbols-outlined text-[#27c93f]">check</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-6 text-sm font-bold">Analytics Dashboard</td>
+                                <td class="p-6 text-center text-xs font-bold text-[#919eab]">Basic</td>
+                                <td class="p-6 text-center text-xs font-bold text-[#1a1c1d]">Full</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-24 bg-[#1a1c1d]">
+            <div class="max-w-5xl mx-auto px-6 text-center space-y-10">
+                <h2 class="text-5xl font-black text-white tracking-tight">Ready to boost your conversion?</h2>
+                <div class="flex justify-center gap-4">
+                    <button
+                        class="bg-primary text-white text-lg font-black px-12 py-5 rounded-2xl shadow-xl shadow-primary/20 hover:scale-[1.02] transition-all active:scale-[0.98]">
+                        Start Your Free Trial
+                    </button>
+                </div>
+                <p class="text-[10px] text-[#919eab] font-black uppercase tracking-widest">Risk-free for 7 days • Cancel
+                    anytime</p>
+            </div>
+        </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="components.js"></script>
+</body>
+
+</html>
