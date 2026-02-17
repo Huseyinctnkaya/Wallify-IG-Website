@@ -6,7 +6,6 @@
     { href: "index.html", label: "Home" },
     { href: "features.html", label: "Features" },
     { href: "pricing.html", label: "Pricing" },
-    { href: "blog.html", label: "Blog" },
     { href: "docs.html", label: "Docs" },
     { href: "support.html", label: "Support" },
   ];
@@ -34,7 +33,7 @@
       ${buildNav()}
     </nav>
     <div class="flex items-center gap-4">
-      <button class="bg-black hover:bg-black/90 text-white text-sm font-bold px-5 py-2 rounded-lg transition-all shadow-sm">
+      <button class="bg-black hover:bg-black/90 text-white text-sm font-bold px-5 py-3.5 rounded-lg transition-all shadow-sm">
         Install App
       </button>
     </div>
@@ -57,9 +56,9 @@
           The fastest Instagram feed app for Shopify. Built for high-volume stores that demand performance.
         </p>
         <div class="flex gap-4">
-          <span class="material-symbols-outlined text-[#5c5f62] cursor-pointer hover:text-black transition-colors">brand_awareness</span>
-          <span class="material-symbols-outlined text-[#5c5f62] cursor-pointer hover:text-black transition-colors">share</span>
-          <span class="material-symbols-outlined text-[#5c5f62] cursor-pointer hover:text-black transition-colors">public</span>
+          <a href="#" class="text-[#5c5f62] hover:text-[#ff5a3d] transition-colors" title="LinkedIn">
+            <svg class="size-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
         </div>
       </div>
       <div>
@@ -73,7 +72,6 @@
       <div>
         <h4 class="text-sm font-bold text-[#1a1c1d] mb-6 uppercase tracking-wider">Resources</h4>
         <ul class="space-y-4 text-sm text-[#5c5f62] font-medium">
-          <li><a class="hover:text-black" href="blog.html">Case Studies</a></li>
           <li><a class="hover:text-black" href="support.html">Help Center</a></li>
           <li><a class="hover:text-black" href="docs.html">API Docs</a></li>
         </ul>

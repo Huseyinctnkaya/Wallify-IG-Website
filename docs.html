@@ -43,6 +43,10 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+
+        .doc-section {
+            scroll-margin-top: 100px;
+        }
     </style>
 </head>
 
@@ -51,15 +55,16 @@
     <div class="max-w-7xl mx-auto flex flex-col lg:flex-row min-h-screen">
         <!-- Sidebar Navigation -->
         <aside
-            class="w-full lg:w-72 lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)] p-8 border-r border-[#f0f0f0] overflow-y-auto">
+            class="w-full lg:w-72 lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)] p-8 border-r border-[#f0f0f0] overflow-y-auto hidden lg:block">
             <nav class="space-y-10">
                 <div>
                     <h5 class="text-[10px] font-black uppercase tracking-widest text-[#919eab] mb-6">Introduction</h5>
                     <ul class="space-y-3">
-                        <li><a href="#" class="text-sm font-black text-primary flex items-center gap-3"><span
+                        <li><a href="#getting-started"
+                                class="text-sm font-black text-primary flex items-center gap-3"><span
                                     class="material-symbols-outlined text-lg">rocket_launch</span> Getting Started</a>
                         </li>
-                        <li><a href="#"
+                        <li><a href="#installation"
                                 class="text-sm font-bold text-[#5c5f62] flex items-center gap-3 hover:text-black transition-all"><span
                                     class="material-symbols-outlined text-lg">install_desktop</span> Installation</a>
                         </li>
@@ -68,13 +73,13 @@
                 <div>
                     <h5 class="text-[10px] font-black uppercase tracking-widest text-[#919eab] mb-6">User Guide</h5>
                     <ul class="space-y-3">
-                        <li><a href="#"
+                        <li><a href="#connecting-ig"
                                 class="text-sm font-bold text-[#5c5f62] flex items-center gap-3 hover:text-black transition-all"><span
                                     class="material-symbols-outlined text-lg">photo_camera</span> Connecting IG</a></li>
-                        <li><a href="#"
+                        <li><a href="#customization"
                                 class="text-sm font-bold text-[#5c5f62] flex items-center gap-3 hover:text-black transition-all"><span
                                     class="material-symbols-outlined text-lg">brush</span> Customization</a></li>
-                        <li><a href="#"
+                        <li><a href="#analytics"
                                 class="text-sm font-bold text-[#5c5f62] flex items-center gap-3 hover:text-black transition-all"><span
                                     class="material-symbols-outlined text-lg">analytics</span> Analytics</a></li>
                     </ul>
@@ -89,8 +94,9 @@
         </aside>
 
         <!-- Main Content area -->
-        <main class="flex-1 p-8 lg:p-16 max-w-4xl">
-            <div class="space-y-12">
+        <main class="flex-1 p-8 lg:p-16 max-w-4xl space-y-24">
+            <!-- 1. Getting Started -->
+            <section id="getting-started" class="doc-section space-y-10">
                 <div class="space-y-6">
                     <nav
                         class="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[#919eab]">
@@ -104,46 +110,182 @@
                     </p>
                 </div>
 
+                <!-- Placeholder for Hero Image -->
                 <div
-                    class="aspect-video bg-[#f9fafb] border border-[#e1e3e5] rounded-3xl flex items-center justify-center overflow-hidden">
-                    <img class="w-full h-full object-cover" data-alt="Screenshot of Wallify IG dashboard"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKwbeAG2swBTMBqRoIXTWUslJBw9p4rp8xjp7cN0SF1xmGEaLXbMwwjCEuoh34cpHjObLmzRtyr0TCObXsoHH2L6BNvoot5E6EGRIXsR8J7ScufMg54B7Ox-_9WLT6PJ_IB8Ga2W4-noAK6W9XFvSyMg_-sw_v6qIg0zI8YcObVvYfZgAEvjAyVKG5Qhe3N3Uktw-128io4QhUrtI4eAx4FUGQF7SM2LFfPzd2RGSbJ-_RW1AA9M-zkZJVivrHNp3d8rmzHqGZqNA" />
+                    class="aspect-video bg-[#f9fafb] border-2 border-dashed border-[#e1e3e5] rounded-3xl flex flex-col items-center justify-center overflow-hidden">
+                    <span class="material-symbols-outlined text-4xl text-[#919eab] mb-2">image</span>
+                    <p class="text-xs font-bold text-[#919eab] uppercase tracking-widest">Dashboard Overview Image Here
+                    </p>
                 </div>
 
-                <div class="space-y-8">
-                    <section class="space-y-4">
-                        <h2 class="text-2xl font-black text-[#1a1c1d]">1. Install the App</h2>
-                        <p class="text-[#5c5f62] leading-relaxed">Install Wallify IG from the <a href="#"
-                                class="text-primary font-bold hover:underline">Shopify App Store</a>. Once installed,
-                            you'll be redirected to the app dashboard where you'll see the "Setup Guide".</p>
-                    </section>
-                    <section class="space-y-4">
-                        <h2 class="text-2xl font-black text-[#1a1c1d]">2. Connect Instagram</h2>
-                        <p class="text-[#5c5f62] leading-relaxed">Click on the "Connect Account" button. You will be
-                            redirected to Instagram to authorize Wallify IG to access your basic account information and
-                            media.</p>
-                        <div
-                            class="p-4 bg-orange-50 border border-orange-100 rounded-xl text-xs text-orange-800 font-medium">
-                            <strong>Note:</strong> We only request read access to your media. We never post on your
-                            behalf or access private messages.
+                <div class="space-y-6 text-[#5c5f62] leading-relaxed">
+                    <p>Wallify IG is designed to be the simplest yet most powerful way to bring your social content to
+                        your storefront. Following this guide will help you connect your accounts and display your first
+                        feed.</p>
+                </div>
+            </section>
+
+            <!-- 2. Installation -->
+            <section id="installation" class="doc-section space-y-10">
+                <div class="space-y-4">
+                    <h2 class="text-4xl font-black text-[#1a1c1d]">1. Installation</h2>
+                    <p class="text-lg text-[#5c5f62]">Adding Wallify IG to your Shopify store is a one-click process.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="p-6 rounded-2xl bg-[#f9fafb] border border-[#e1e3e5]">
+                            <h4 class="font-black text-sm mb-2">Step 1: App Store</h4>
+                            <p class="text-xs text-[#5c5f62]">Find Wallify IG in the Shopify App Store and click
+                                "Install".</p>
                         </div>
-                    </section>
+                        <div class="p-6 rounded-2xl bg-[#f9fafb] border border-[#e1e3e5]">
+                            <h4 class="font-black text-sm mb-2">Step 2: Permissions</h4>
+                            <p class="text-xs text-[#5c5f62]">Accept the requested permissions to allow the app to
+                                interact with your theme.</p>
+                        </div>
+                    </div>
+                    <!-- Placeholder for Installation Image -->
+                    <div
+                        class="bg-[#f9fafb] border-2 border-dashed border-[#e1e3e5] rounded-3xl flex flex-col items-center justify-center min-h-[200px]">
+                        <span class="material-symbols-outlined text-4xl text-[#919eab] mb-2">image</span>
+                        <p class="text-[10px] font-bold text-[#919eab] uppercase">Install Screen Image Here</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Connecting Instagram -->
+            <section id="connecting-ig" class="doc-section space-y-10">
+                <div class="space-y-4">
+                    <h2 class="text-4xl font-black text-[#1a1c1d]">2. Connecting Instagram</h2>
+                    <p class="text-lg text-[#5c5f62]">Sync your feed securely using the official Meta API.</p>
                 </div>
 
-                <footer
-                    class="pt-16 border-t border-[#f0f0f0] flex flex-col md:flex-row items-center justify-between gap-6">
-                    <div class="text-center md:text-left">
-                        <p class="text-sm font-bold text-[#1a1c1d]">Was this helpful?</p>
-                        <p class="text-xs text-[#919eab] font-medium mt-1">Last updated February 20, 2024</p>
+                <!-- Placeholder for Connection Process Image -->
+                <div
+                    class="aspect-video bg-[#f9fafb] border-2 border-dashed border-[#e1e3e5] rounded-3xl flex flex-col items-center justify-center">
+                    <span class="material-symbols-outlined text-4xl text-[#919eab] mb-2">image</span>
+                    <p class="text-xs font-bold text-[#919eab] uppercase">Instagram OAuth Screen Here</p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="p-8 bg-white border border-[#e1e3e5] rounded-[2.5rem] shadow-sm space-y-4">
+                        <h4 class="text-xl font-black">Process Overview:</h4>
+                        <ol class="space-y-4 list-decimal pl-6 text-[#5c5f62]">
+                            <li>Navigate to the <strong>Connect</strong> tab in the dashboard.</li>
+                            <li>Click the <strong>Connect Instagram Account</strong> button.</li>
+                            <li>Login to your Instagram account in the pop-up window.</li>
+                            <li>Grant "Read-only" permissions for your media and profile.</li>
+                        </ol>
                     </div>
-                    <div class="flex gap-4">
-                        <button
-                            class="px-5 py-2.5 rounded-xl border border-[#e1e3e5] text-xs font-black transition-all hover:bg-[#f9fafb]">Yes</button>
-                        <button
-                            class="px-5 py-2.5 rounded-xl border border-[#e1e3e5] text-xs font-black transition-all hover:bg-[#f9fafb]">No</button>
+                    <div class="p-6 bg-orange-50 border border-orange-100 rounded-2xl">
+                        <p class="text-xs text-orange-800 font-bold flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">info</span>
+                            Pro Tip: Make sure your Instagram account is a Creator or Business account for best
+                            performance.
+                        </p>
                     </div>
-                </footer>
-            </div>
+                </div>
+            </section>
+
+            <!-- 4. Customization -->
+            <section id="customization" class="doc-section space-y-10">
+                <div class="space-y-4">
+                    <h2 class="text-4xl font-black text-[#1a1c1d]">3. Customization</h2>
+                    <p class="text-lg text-[#5c5f62]">Make the feed look like it was built specifically for your theme.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Placeholder for Layout Preview -->
+                    <div
+                        class="bg-[#f9fafb] border-2 border-dashed border-[#e1e3e5] rounded-3xl aspect-square flex flex-col items-center justify-center p-4 text-center">
+                        <span class="material-symbols-outlined text-3xl text-[#919eab] mb-2">grid_view</span>
+                        <p class="text-[8px] font-black text-[#919eab] uppercase">Grid Layout Image</p>
+                    </div>
+                    <!-- Placeholder for Slider Preview -->
+                    <div
+                        class="bg-[#f9fafb] border-2 border-dashed border-[#e1e3e5] rounded-3xl aspect-square flex flex-col items-center justify-center p-4 text-center">
+                        <span class="material-symbols-outlined text-3xl text-[#919eab] mb-2">view_carousel</span>
+                        <p class="text-[8px] font-black text-[#919eab] uppercase">Slider Layout Image</p>
+                    </div>
+                    <!-- Placeholder for Settings Preview -->
+                    <div
+                        class="bg-[#f9fafb] border-2 border-dashed border-[#e1e3e5] rounded-3xl aspect-square flex flex-col items-center justify-center p-4 text-center">
+                        <span class="material-symbols-outlined text-3xl text-[#919eab] mb-2">palette</span>
+                        <p class="text-[8px] font-black text-[#919eab] uppercase">Style Editor Image</p>
+                    </div>
+                </div>
+
+                <div class="space-y-6 text-[#5c5f62]">
+                    <h4 class="text-xl font-black text-[#1a1c1d]">What you can customize:</h4>
+                    <ul class="grid grid-cols-2 gap-4">
+                        <li class="flex items-center gap-3 text-sm font-bold"><span
+                                class="size-1.5 rounded-full bg-primary"></span> Grid Columns (1-12)</li>
+                        <li class="flex items-center gap-3 text-sm font-bold"><span
+                                class="size-1.5 rounded-full bg-primary"></span> Inner Spacing & Padding</li>
+                        <li class="flex items-center gap-3 text-sm font-bold"><span
+                                class="size-1.5 rounded-full bg-primary"></span> Corner Radius</li>
+                        <li class="flex items-center gap-3 text-sm font-bold"><span
+                                class="size-1.5 rounded-full bg-primary"></span> Hover Effects</li>
+                        <li class="flex items-center gap-3 text-sm font-bold"><span
+                                class="size-1.5 rounded-full bg-primary"></span> Button Colors</li>
+                        <li class="flex items-center gap-3 text-sm font-bold"><span
+                                class="size-1.5 rounded-full bg-primary"></span> Heading Typography</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 5. Analytics -->
+            <section id="analytics" class="doc-section space-y-10">
+                <div class="space-y-4">
+                    <h2 class="text-4xl font-black text-[#1a1c1d]">4. Analytics</h2>
+                    <p class="text-lg text-[#5c5f62]">Track engagement and sales directly from your Instagram feeds.</p>
+                </div>
+
+                <!-- Placeholder for Analytics Image -->
+                <div
+                    class="aspect-video bg-[#f9fafb] border-2 border-dashed border-[#e1e3e5] rounded-3xl flex flex-col items-center justify-center">
+                    <span class="material-symbols-outlined text-4xl text-[#919eab] mb-2">image</span>
+                    <p class="text-xs font-bold text-[#919eab] uppercase">Analytics Dashboard Image Here</p>
+                </div>
+
+                <div class="space-y-6 text-[#5c5f62]">
+                    <p>Our Analytics dashboard shows you how users interact with your feed. Key metrics include:</p>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <h5 class="font-black text-[#1a1c1d]">Feed Impressions</h5>
+                            <p class="text-xs">How many times your feed was loaded by unique visitors.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h5 class="font-black text-[#1a1c1d]">Click-Through Rate (CTR)</h5>
+                            <p class="text-xs">The percentage of users who clicked on an image to view products.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h5 class="font-black text-[#1a1c1d]">Top Performing Posts</h5>
+                            <p class="text-xs">Identify which Instagram posts are driving the most interest.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h5 class="font-black text-[#1a1c1d]">Conversion Tracking</h5>
+                            <p class="text-xs">Measure revenue generated from users who visited from the feed.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer
+                class="pt-16 border-t border-[#f0f0f0] flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="text-center md:text-left">
+                    <p class="text-sm font-bold text-[#1a1c1d]">Still have questions?</p>
+                    <p class="text-xs text-[#919eab] font-medium mt-1">We're here to help you scaling.</p>
+                </div>
+                <div class="flex gap-4">
+                    <a href="support.html"
+                        class="px-8 py-6 rounded-2xl bg-primary text-white text-xs font-black transition-all hover:scale-[1.05] shadow-lg shadow-primary/20">Contact
+                        Support</a>
+                </div>
+            </footer>
         </main>
     </div>
     <div id="site-footer"></div>
