@@ -23,11 +23,8 @@
   const headerHTML = `
 <header class="sticky top-0 z-50 w-full border-b border-[#f0f0f0] bg-white/90 backdrop-blur-lg">
   <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-    <a href="index" class="flex items-center gap-2">
-      <div class="size-8 bg-black rounded-lg flex items-center justify-center text-white">
-        <span class="material-symbols-outlined text-lg fill-1">grid_view</span>
-      </div>
-      <h2 class="text-[#1a1c1d] text-lg font-bold tracking-tight">Wallify IG</h2>
+    <a href="index" class="flex items-center">
+      <img src="assets/wallify-logo.png" alt="Wallify IG Logo" class="h-12 w-auto object-contain">
     </a>
     <nav class="hidden md:flex items-center gap-8">
       ${buildNav()}
@@ -46,11 +43,8 @@
   <div class="max-w-7xl mx-auto px-6">
     <div class="grid md:grid-cols-4 gap-12 mb-20">
       <div class="col-span-1 md:col-span-1 space-y-6">
-        <a href="index" class="flex items-center gap-2">
-          <div class="size-6 bg-black rounded-md flex items-center justify-center text-white">
-            <span class="material-symbols-outlined text-xs">grid_view</span>
-          </div>
-          <h2 class="text-[#1a1c1d] text-base font-bold tracking-tight">Wallify IG</h2>
+        <a href="index" class="flex items-center">
+          <img src="assets/wallify-logo.png" alt="Wallify IG Logo" class="h-10 w-auto object-contain">
         </a>
         <p class="text-sm text-[#5c5f62] leading-relaxed max-w-xs">
           Wallify IG is a premium Shopify app developed by <b>34Devs Shopify Agency</b>. Engineered for speed and conversion, it turns your Instagram feed into a powerful shoppable gallery.
