@@ -53,7 +53,7 @@
           <h2 class="text-[#1a1c1d] text-base font-bold tracking-tight">Wallify IG</h2>
         </a>
         <p class="text-sm text-[#5c5f62] leading-relaxed max-w-xs">
-          The fastest Instagram feed app for Shopify. Built for high-volume stores that demand performance.
+          Wallify IG is a premium Shopify app developed by <b>34Devs Shopify Agency</b>. Engineered for speed and conversion, it turns your Instagram feed into a powerful shoppable gallery.
         </p>
         <div class="flex gap-4">
           <a href="#" class="text-[#5c5f62] hover:text-[#ff5a3d] transition-colors" title="LinkedIn">
