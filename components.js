@@ -19,6 +19,15 @@
       .join("\n");
   }
 
+  function buildMobileNav() {
+    return navLinks
+      .map((link) => {
+        const isActive = currentPage === link.href;
+        return `<a class="text-lg font-bold ${isActive ? "text-primary" : "text-[#1a1c1d] hover:text-primary"} transition-colors py-4 border-b border-[#f0f0f0]" href="${link.href}">${link.label}</a>`;
+      })
+      .join("\n");
+  }
+
   // Header
   const headerHTML = `
 <header class="sticky top-0 z-50 w-full border-b border-[#f0f0f0] bg-white/90 backdrop-blur-lg">
@@ -30,12 +39,38 @@
       ${buildNav()}
     </nav>
     <div class="flex items-center gap-4">
-      <button class="bg-black hover:bg-black/90 text-white text-sm font-bold px-5 py-3.5 rounded-lg transition-all shadow-sm">
+      <button class="hidden md:block bg-black hover:bg-black/90 text-white text-sm font-bold px-5 py-3.5 rounded-lg transition-all shadow-sm">
+        Install App
+      </button>
+      <button id="mobile-menu-open" class="md:hidden flex items-center justify-center p-2 text-[#1a1c1d]">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+  <div class="p-6 h-full flex flex-col">
+    <div class="flex items-center justify-between mb-12">
+      <a href="index" class="flex items-center">
+        <img src="assets/wallify-logo.png" alt="Wallify IG Logo" class="h-10 w-auto object-contain">
+      </a>
+      <button id="mobile-menu-close" class="flex items-center justify-center p-2 text-[#1a1c1d]">
+        <span class="material-symbols-outlined text-3xl">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col">
+      ${buildMobileNav()}
+    </nav>
+    <div class="mt-auto pt-10">
+      <button class="w-full bg-black hover:bg-black/90 text-white text-lg font-bold py-5 rounded-xl transition-all shadow-lg shadow-black/10">
         Install App
       </button>
     </div>
   </div>
-</header>`;
+</div>
+`;
 
   // Footer
   const footerHTML = `
@@ -93,6 +128,31 @@
   const headerEl = document.getElementById("site-header");
   const footerEl = document.getElementById("site-footer");
 
-  if (headerEl) headerEl.outerHTML = headerHTML;
+  if (headerEl) {
+    headerEl.outerHTML = headerHTML;
+
+    // Add Event Listeners for Mobile Menu
+    const openBtn = document.getElementById("mobile-menu-open");
+    const closeBtn = document.getElementById("mobile-menu-close");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (openBtn && closeBtn && mobileMenu) {
+      openBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("translate-x-full");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("translate-x-full");
+      });
+
+      // Close menu when a link is clicked
+      const mobileLinks = mobileMenu.querySelectorAll("nav a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("translate-x-full");
+        });
+      });
+    }
+  }
   if (footerEl) footerEl.outerHTML = footerHTML;
 })();
